@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-black text-zand font-body antialiased;
+  }
+  ::selection {
+    background: #f0a93c;
+    color: #000;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-site px-6;
+  }
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-amber mb-3;
+  }
+  .h2 {
+    @apply font-display font-extrabold tracking-tight text-white text-3xl md:text-4xl leading-tight;
+  }
+  .sec-sub {
+    @apply text-[#C7C2B7] max-w-[58ch] mt-3;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold cursor-pointer transition;
+  }
+  .btn-primary {
+    @apply bg-amber text-black hover:bg-gloed;
+  }
+  .btn-ghost {
+    @apply border border-line text-white hover:border-amber hover:text-amber;
+  }
+  .card {
+    @apply rounded-2xl border border-line bg-surf p-6;
+  }
+  .field {
+    @apply w-full rounded-xl border border-line bg-[#0e0e11] px-4 py-3 text-sm text-white outline-none focus:border-amber;
+  }
+  .field-label {
+    @apply mb-1.5 block font-mono text-xs tracking-wide text-rook;
+  }
+  .powered {
+    @apply font-mono text-[11px] tracking-[0.13em] text-rook;
+  }
+  .powered b {
+    @apply font-medium text-[#AEB3BA];
+  }
+}
+
+@layer utilities {
+  /* Brushed-chrome text — matches the logo */
+  .text-chrome {
+    background: linear-gradient(
+      180deg,
+      #fafbfc 0%,
+      #c4c8ce 20%,
+      #83888f 42%,
+      #f0f2f4 52%,
+      #6d7178 70%,
+      #b6bac0 86%,
+      #5f636a 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  /* Warm amber stage beam */
+  .beam {
+    background: linear-gradient(180deg, rgba(245, 197, 107, 0.18), transparent 72%);
+    clip-path: polygon(46% 0, 54% 0, 78% 100%, 22% 100%);
+    filter: blur(8px);
+  }
+  /* Truss lattice bar */
+  .truss {
+    height: 15px;
+    background:
+      linear-gradient(#9aa0a8, #9aa0a8) 0 2px / 100% 1.5px no-repeat,
+      linear-gradient(#9aa0a8, #9aa0a8) 0 11px / 100% 1.5px no-repeat,
+      repeating-linear-gradient(45deg, #9aa0a8 0 1.4px, transparent 1.4px 11px),
+      repeating-linear-gradient(-45deg, #9aa0a8 0 1.4px, transparent 1.4px 11px);
+    opacity: 0.8;
+  }
+}

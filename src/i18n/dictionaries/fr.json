@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "title": "SD Light and Sound — Lumière · Son · Expérience",
+    "description": "Partenaire full-service personnel pour la lumière, le son et l'expérience. Du devis au démontage, un seul interlocuteur. Actif dans toute la Belgique et au-delà."
+  },
+  "nav": {
+    "diensten": "Services",
+    "materiaal": "Matériel",
+    "realisaties": "Réalisations",
+    "over": "À propos",
+    "cta": "Devis"
+  },
+  "hero": {
+    "slogan": "Du premier faisceau à la dernière note.",
+    "sub": "Votre partenaire full-service personnel pour la lumière, le son et l'expérience — du devis au démontage, un seul interlocuteur.",
+    "cta1": "Demander un devis",
+    "cta2": "WhatsApp"
+  },
+  "diensten": {
+    "eyebrow": "Services",
+    "title": "Tout pour votre événement.",
+    "sub": "D'une petite fête à un festival de 2000 personnes — lumière et son, parfaitement gérés.",
+    "extraLead": "Aussi possible :",
+    "extraBody": "scène, remorque frigo, location de salle et boissons — on gère l'ensemble. Demandez-nous.",
+    "items": [
+      { "title": "Son", "desc": "Sonorisation professionnelle, salle ou plein air." },
+      { "title": "Lumière", "desc": "Ambiance ou spectacle — lyres, wash, spots." },
+      { "title": "Mur LED", "desc": "Image nette pour visuels, logos et vidéo." },
+      { "title": "Scène & truss", "desc": "Structures sûres, toutes tailles." },
+      { "title": "DJ", "desc": "DJ expérimenté ou booth sur mesure." },
+      { "title": "Effets", "desc": "Haze, fumée et CO₂ pour plus d'impact." }
+    ]
+  },
+  "why": {
+    "eyebrow": "Pourquoi SD",
+    "title": "Une personne. De A à Z.",
+    "items": [
+      { "title": "Un seul interlocuteur", "desc": "Du premier devis au démontage, toujours la même personne." },
+      { "title": "Tout est géré", "desc": "Installation, pilotage, démontage — vous ne pensez à rien." },
+      { "title": "Présent sur place", "desc": "Nous sommes là pour que lumière et son soient parfaits toute la soirée." },
+      { "title": "Matériel pro", "desc": "Équipement fiable et bien entretenu, grandes marques." }
+    ]
+  },
+  "mat": {
+    "eyebrow": "Matériel",
+    "title": "Petite fête ou festival — tout en interne.",
+    "body": "Matériel professionnel, toujours bien entretenu et piloté avec précision. Ce que nous n'avons pas, nous le procurons — vous ne voyez qu'une chose : tout fonctionne.",
+    "cap": "invités — de l'intime au festival"
+  },
+  "real": {
+    "eyebrow": "Réalisations",
+    "title": "Travaux récents.",
+    "empty": "Nos premières réalisations apparaîtront ici bientôt. Suivez-nous pour les voir en premier."
+  },
+  "over": {
+    "eyebrow": "À propos",
+    "title": "SD, c'est Stephan Dobos.",
+    "p1": "Actif depuis l'enfance dans l'événementiel — des petites fêtes aux grands festivals — par pure passion pour la lumière et le son.",
+    "p2": "Pas une société anonyme, mais un artisan passionné qui gère votre événement du début à la fin. Personnel, impliqué, et présent lui-même."
+  },
+  "off": {
+    "eyebrow": "Devis",
+    "title": "Demandez votre devis.",
+    "sub": "Parlez-nous de votre événement. Vous recevrez vite un devis personnalisé — prix toujours sur mesure.",
+    "naam": "Nom",
+    "email": "E-mail",
+    "type": "Type d'événement",
+    "datum": "Date",
+    "bericht": "Message",
+    "send": "Envoyer la demande",
+    "sending": "Envoi…",
+    "success": "Merci ! Votre demande a été envoyée. Nous vous recontactons vite.",
+    "error": "Une erreur est survenue. Réessayez ou envoyez-nous un e-mail.",
+    "consentPre": "En envoyant, vous acceptez notre",
+    "privacy": "politique de confidentialité",
+    "whatsapp": "WhatsApp",
+    "note": "De Pannelaan 73, 8660 De Panne · Actif dans toute la Belgique et au-delà."
+  },
+  "foot": {
+    "tag": "Lumière · Son · Expérience",
+    "area": "Actif dans toute la Belgique et au-delà.",
+    "langs": "NL · FR · EN",
+    "credit": "Site web par",
+    "privacy": "Confidentialité",
+    "terms": "Conditions générales"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "updated": "Dernière mise à jour : 2026",
+      "intro": "SD Light and Sound respecte votre vie privée et traite les données personnelles conformément au RGPD. Cette politique explique quelles données nous collectons et pourquoi.",
+      "sections": [
+        { "h": "Responsable du traitement", "p": "SD Light and Sound (Stephan Dobos), De Pannelaan 73, 8660 De Panne. Contact : info@sdlightandsound.be." },
+        { "h": "Quelles données", "p": "Via le formulaire de devis : nom, e-mail, type d'événement, date et votre message. Nous ne collectons que ce que vous saisissez." },
+        { "h": "Pourquoi", "p": "Pour répondre à votre demande, établir un devis et vous contacter. Nous n'utilisons pas vos données à des fins publicitaires." },
+        { "h": "Base légale", "p": "Le traitement repose sur votre consentement et sur des démarches précontractuelles prises à votre demande." },
+        { "h": "Durée de conservation", "p": "Nous ne conservons vos données que le temps nécessaire au suivi de votre demande et aux obligations légales." },
+        { "h": "Partage avec des tiers", "p": "Nous ne vendons jamais vos données. Un sous-traitant (fournisseur d'e-mail) peut être utilisé pour l'envoi des messages, agissant uniquement pour notre compte." },
+        { "h": "Cookies", "p": "Ce site n'utilise pas de cookies de suivi ou publicitaires. Seules les fonctions techniquement nécessaires sont utilisées." },
+        { "h": "Vos droits", "p": "Vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition. Écrivez à info@sdlightandsound.be. Vous pouvez aussi introduire une plainte auprès de l'Autorité de protection des données (www.autoriteprotectiondonnees.be)." }
+      ]
+    },
+    "terms": {
+      "title": "Conditions générales",
+      "updated": "",
+      "intro": "Nos conditions générales seront publiées prochainement. Une question sur un devis ou une réservation ? Contactez-nous via info@sdlightandsound.be.",
+      "sections": []
+    }
+  }
+}

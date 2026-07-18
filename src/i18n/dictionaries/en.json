@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "title": "SD Light and Sound — Light · Sound · Experience",
+    "description": "Personal full-service partner for light, sound and experience. From quote to breakdown, one point of contact. Working across Belgium and beyond."
+  },
+  "nav": {
+    "diensten": "Services",
+    "materiaal": "Equipment",
+    "realisaties": "Work",
+    "over": "About",
+    "cta": "Get a quote"
+  },
+  "hero": {
+    "slogan": "From the first beam to the last note.",
+    "sub": "Your personal full-service partner for light, sound and experience — from quote to breakdown, one point of contact.",
+    "cta1": "Request a quote",
+    "cta2": "WhatsApp"
+  },
+  "diensten": {
+    "eyebrow": "Services",
+    "title": "Everything for your event, in-house.",
+    "sub": "From an intimate party to a 2000-person festival — light and sound, tightly handled.",
+    "extraLead": "Also available:",
+    "extraBody": "staging, cooling trailer, venue rental and drinks — we handle the full picture. Just ask.",
+    "items": [
+      { "title": "Sound", "desc": "Professional PA for any venue or outdoors." },
+      { "title": "Lighting", "desc": "Ambience or spectacle — moving heads, wash, spots." },
+      { "title": "LED wall", "desc": "Crisp image for visuals, logos and video." },
+      { "title": "Stage & truss", "desc": "Safe structures, any size." },
+      { "title": "DJ", "desc": "Experienced DJ or custom DJ booth." },
+      { "title": "Effects", "desc": "Haze, smoke and CO₂ for extra impact." }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why SD",
+    "title": "One person. A to Z.",
+    "items": [
+      { "title": "One contact", "desc": "From first quote to breakdown, always the same person." },
+      { "title": "Fully handled", "desc": "Setup, operation, breakdown — you think about nothing." },
+      { "title": "On-site myself", "desc": "I'm there in person, so light and sound are right all night." },
+      { "title": "Pro gear", "desc": "Reliable, well-maintained equipment from top brands." }
+    ]
+  },
+  "mat": {
+    "eyebrow": "Equipment",
+    "title": "Small party or festival — all in-house.",
+    "body": "Professional equipment, always well maintained and precisely operated. Anything we don't own, we source — all you notice is that everything works.",
+    "cap": "guests — from intimate to festival"
+  },
+  "real": {
+    "eyebrow": "Work",
+    "title": "Recent work.",
+    "empty": "Our first projects will appear here soon. Follow us to see them first."
+  },
+  "over": {
+    "eyebrow": "About",
+    "title": "SD is Stephan Dobos.",
+    "p1": "Active in events since childhood — from small parties to big festivals — out of pure passion for light and sound.",
+    "p2": "Not an anonymous company, but one driven craftsman who runs your event from start to finish. Personal, involved, and there in person."
+  },
+  "off": {
+    "eyebrow": "Quote",
+    "title": "Request your quote.",
+    "sub": "Tell us briefly about your event. You'll get a personal quote fast — pricing always tailored.",
+    "naam": "Name",
+    "email": "E-mail",
+    "type": "Event type",
+    "datum": "Date",
+    "bericht": "Message",
+    "send": "Send request",
+    "sending": "Sending…",
+    "success": "Thanks! Your request has been sent. We'll be in touch soon.",
+    "error": "Something went wrong. Please try again or email us directly.",
+    "consentPre": "By sending, you agree to our",
+    "privacy": "privacy policy",
+    "whatsapp": "WhatsApp",
+    "note": "De Pannelaan 73, 8660 De Panne · Working across Belgium and beyond."
+  },
+  "foot": {
+    "tag": "Light · Sound · Experience",
+    "area": "Working across Belgium and beyond.",
+    "langs": "NL · FR · EN",
+    "credit": "Website by",
+    "privacy": "Privacy policy",
+    "terms": "Terms & conditions"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy policy",
+      "updated": "Last updated: 2026",
+      "intro": "SD Light and Sound respects your privacy and processes personal data in line with the GDPR. This policy explains what we collect and why.",
+      "sections": [
+        { "h": "Data controller", "p": "SD Light and Sound (Stephan Dobos), De Pannelaan 73, 8660 De Panne. Contact: info@sdlightandsound.be." },
+        { "h": "What data", "p": "Via the quote form: name, e-mail, event type, date and your message. We only collect what you enter yourself." },
+        { "h": "Purpose", "p": "To answer your request, prepare a quote and contact you. We do not use your data for advertising." },
+        { "h": "Legal basis", "p": "Processing is based on your consent and on pre-contractual steps taken at your request." },
+        { "h": "Retention", "p": "We keep your data no longer than needed to handle your request and to meet legal obligations." },
+        { "h": "Sharing with third parties", "p": "We never sell your data. A processor (e-mail provider) may be used to send messages, acting only on our behalf." },
+        { "h": "Cookies", "p": "This website uses no tracking or advertising cookies. Only technically necessary functions are used." },
+        { "h": "Your rights", "p": "You have the right to access, correct, delete and object. E-mail info@sdlightandsound.be. You may also lodge a complaint with the Belgian Data Protection Authority (www.dataprotectionauthority.be)." }
+      ]
+    },
+    "terms": {
+      "title": "Terms & conditions",
+      "updated": "",
+      "intro": "Our terms and conditions will be published soon. Questions about a quote or booking? Contact us at info@sdlightandsound.be.",
+      "sections": []
+    }
+  }
+}
