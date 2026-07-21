@@ -23,22 +23,52 @@
     "extraLead": "Aussi possible :",
     "extraBody": "scène, remorque frigo, location de salle et boissons — on gère l'ensemble. Demandez-nous.",
     "items": [
-      { "title": "Son", "desc": "Sonorisation professionnelle, salle ou plein air." },
-      { "title": "Lumière", "desc": "Ambiance ou spectacle — lyres, wash, spots." },
-      { "title": "Mur LED", "desc": "Image nette pour visuels, logos et vidéo." },
-      { "title": "Scène & truss", "desc": "Structures sûres, toutes tailles." },
-      { "title": "DJ", "desc": "DJ expérimenté ou booth sur mesure." },
-      { "title": "Effets", "desc": "Haze, fumée et CO₂ pour plus d'impact." }
+      {
+        "title": "Son",
+        "desc": "Sonorisation professionnelle, salle ou plein air."
+      },
+      {
+        "title": "Lumière",
+        "desc": "Ambiance ou spectacle — lyres, wash, spots."
+      },
+      {
+        "title": "Mur LED",
+        "desc": "Image nette pour visuels, logos et vidéo."
+      },
+      {
+        "title": "Scène & truss",
+        "desc": "Structures sûres, toutes tailles."
+      },
+      {
+        "title": "DJ",
+        "desc": "DJ expérimenté ou booth sur mesure."
+      },
+      {
+        "title": "Effets",
+        "desc": "Haze, fumée et CO₂ pour plus d'impact."
+      }
     ]
   },
   "why": {
     "eyebrow": "Pourquoi SD",
     "title": "Une personne. De A à Z.",
     "items": [
-      { "title": "Un seul interlocuteur", "desc": "Du premier devis au démontage, toujours la même personne." },
-      { "title": "Tout est géré", "desc": "Installation, pilotage, démontage — vous ne pensez à rien." },
-      { "title": "Présent sur place", "desc": "Nous sommes là pour que lumière et son soient parfaits toute la soirée." },
-      { "title": "Matériel pro", "desc": "Équipement fiable et bien entretenu, grandes marques." }
+      {
+        "title": "Un seul interlocuteur",
+        "desc": "Du premier devis au démontage, toujours la même personne."
+      },
+      {
+        "title": "Tout est géré",
+        "desc": "Installation, pilotage, démontage — vous ne pensez à rien."
+      },
+      {
+        "title": "Présent sur place",
+        "desc": "Nous sommes là pour que lumière et son soient parfaits toute la soirée."
+      },
+      {
+        "title": "Matériel pro",
+        "desc": "Équipement fiable et bien entretenu, grandes marques."
+      }
     ]
   },
   "mat": {
@@ -74,7 +104,9 @@
     "consentPre": "En envoyant, vous acceptez notre",
     "privacy": "politique de confidentialité",
     "whatsapp": "WhatsApp",
-    "note": "De Pannelaan 73, 8660 De Panne · Actif dans toute la Belgique et au-delà."
+    "note": "De Pannelaan 73, 8660 De Panne · Actif dans toute la Belgique et au-delà.",
+    "errRequired": "Ce champ est obligatoire.",
+    "errEmail": "Saisissez une adresse e-mail valide."
   },
   "foot": {
     "tag": "Lumière · Son · Expérience",
@@ -90,14 +122,38 @@
       "updated": "Dernière mise à jour : 2026",
       "intro": "SD Light and Sound respecte votre vie privée et traite les données personnelles conformément au RGPD. Cette politique explique quelles données nous collectons et pourquoi.",
       "sections": [
-        { "h": "Responsable du traitement", "p": "SD Light and Sound (Stephan Dobos), De Pannelaan 73, 8660 De Panne. Contact : info@sdlightandsound.be." },
-        { "h": "Quelles données", "p": "Via le formulaire de devis : nom, e-mail, type d'événement, date et votre message. Nous ne collectons que ce que vous saisissez." },
-        { "h": "Pourquoi", "p": "Pour répondre à votre demande, établir un devis et vous contacter. Nous n'utilisons pas vos données à des fins publicitaires." },
-        { "h": "Base légale", "p": "Le traitement repose sur votre consentement et sur des démarches précontractuelles prises à votre demande." },
-        { "h": "Durée de conservation", "p": "Nous ne conservons vos données que le temps nécessaire au suivi de votre demande et aux obligations légales." },
-        { "h": "Partage avec des tiers", "p": "Nous ne vendons jamais vos données. Un sous-traitant (fournisseur d'e-mail) peut être utilisé pour l'envoi des messages, agissant uniquement pour notre compte." },
-        { "h": "Cookies", "p": "Ce site n'utilise pas de cookies de suivi ou publicitaires. Seules les fonctions techniquement nécessaires sont utilisées." },
-        { "h": "Vos droits", "p": "Vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition. Écrivez à info@sdlightandsound.be. Vous pouvez aussi introduire une plainte auprès de l'Autorité de protection des données (www.autoriteprotectiondonnees.be)." }
+        {
+          "h": "Responsable du traitement",
+          "p": "SD Light and Sound (Stephan Dobos), De Pannelaan 73, 8660 De Panne. Contact : info@sdlightandsound.be."
+        },
+        {
+          "h": "Quelles données",
+          "p": "Via le formulaire de devis : nom, e-mail, type d'événement, date et votre message. Nous ne collectons que ce que vous saisissez."
+        },
+        {
+          "h": "Pourquoi",
+          "p": "Pour répondre à votre demande, établir un devis et vous contacter. Nous n'utilisons pas vos données à des fins publicitaires."
+        },
+        {
+          "h": "Base légale",
+          "p": "Le traitement repose sur votre consentement et sur des démarches précontractuelles prises à votre demande."
+        },
+        {
+          "h": "Durée de conservation",
+          "p": "Nous ne conservons vos données que le temps nécessaire au suivi de votre demande et aux obligations légales."
+        },
+        {
+          "h": "Partage avec des tiers",
+          "p": "Nous ne vendons jamais vos données. Un sous-traitant (fournisseur d'e-mail) peut être utilisé pour l'envoi des messages, agissant uniquement pour notre compte."
+        },
+        {
+          "h": "Cookies",
+          "p": "Ce site n'utilise pas de cookies de suivi ou publicitaires. Seules les fonctions techniquement nécessaires sont utilisées."
+        },
+        {
+          "h": "Vos droits",
+          "p": "Vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition. Écrivez à info@sdlightandsound.be. Vous pouvez aussi introduire une plainte auprès de l'Autorité de protection des données (www.autoriteprotectiondonnees.be)."
+        }
       ]
     },
     "terms": {
