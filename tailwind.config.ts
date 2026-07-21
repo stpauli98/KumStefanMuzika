@@ -16,9 +16,11 @@ const config: Config = {
         rook: "#8A8D96",
       },
       fontFamily: {
-        display: ["var(--font-sora)", "sans-serif"],
-        body: ["var(--font-inter)", "sans-serif"],
-        mono: ["var(--font-mono)", "monospace"],
+        display: ["var(--font-archivo)", "sans-serif"],
+        body: ["var(--font-archivo)", "sans-serif"],
+        // The label role: narrow, uppercase, wide-tracked. Not a true monospace,
+        // but it is what carries eyebrows and spec lines.
+        mono: ["var(--font-narrow)", "sans-serif"],
       },
       maxWidth: { site: "1120px" },
       boxShadow: {

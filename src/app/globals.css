@@ -65,20 +65,25 @@
     background: linear-gradient(90deg, rgba(240, 169, 60, 0), #f0a93c);
   }
 
+  /* Headings run on the width axis, not just the weight axis — expanded and
+     heavy is what reads as signage rather than as a website. */
   .h1 {
-    @apply font-display font-extrabold tracking-[-0.03em] text-white;
-    font-size: clamp(2.1rem, 1.1rem + 4.6vw, 4.25rem);
-    line-height: 1.02;
+    @apply font-display font-extrabold tracking-[-0.02em] text-white;
+    font-variation-settings: "wdth" 118;
+    font-size: clamp(2rem, 1.05rem + 4.4vw, 4rem);
+    line-height: 1.04;
   }
   .h2 {
-    @apply font-display font-extrabold tracking-[-0.025em] text-white;
-    font-size: clamp(1.75rem, 1.2rem + 2.2vw, 2.75rem);
-    line-height: 1.08;
+    @apply font-display font-extrabold tracking-[-0.018em] text-white;
+    font-variation-settings: "wdth" 115;
+    font-size: clamp(1.7rem, 1.2rem + 2.1vw, 2.6rem);
+    line-height: 1.1;
   }
   .h3 {
-    @apply font-display font-bold tracking-[-0.015em] text-white;
+    @apply font-display font-bold tracking-[-0.01em] text-white;
+    font-variation-settings: "wdth" 108;
     font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem);
-    line-height: 1.3;
+    line-height: 1.32;
   }
   .lead {
     @apply text-[#C7C2B7];
