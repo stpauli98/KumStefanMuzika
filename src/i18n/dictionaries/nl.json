@@ -23,22 +23,52 @@
     "extraLead": "Ook mogelijk:",
     "extraBody": "podium, koelwagen, zaalverhuur en drank — we regelen het volledige plaatje. Vraag ernaar.",
     "items": [
-      { "title": "Geluid", "desc": "Professionele PA voor elke zaal of openlucht." },
-      { "title": "Lichten", "desc": "Sfeer of spektakel — moving heads, wash, spots." },
-      { "title": "LED-wand", "desc": "Scherp beeld voor visuals, logo's en video." },
-      { "title": "Podium & truss", "desc": "Veilige constructies, elke maat." },
-      { "title": "DJ", "desc": "Ervaren DJ of DJ-booth op maat." },
-      { "title": "Effecten", "desc": "Haze, rook en CO₂ voor extra impact." }
+      {
+        "title": "Geluid",
+        "desc": "Professionele PA voor elke zaal of openlucht."
+      },
+      {
+        "title": "Lichten",
+        "desc": "Sfeer of spektakel — moving heads, wash, spots."
+      },
+      {
+        "title": "LED-wand",
+        "desc": "Scherp beeld voor visuals, logo's en video."
+      },
+      {
+        "title": "Podium & truss",
+        "desc": "Veilige constructies, elke maat."
+      },
+      {
+        "title": "DJ",
+        "desc": "Ervaren DJ of DJ-booth op maat."
+      },
+      {
+        "title": "Effecten",
+        "desc": "Haze, rook en CO₂ voor extra impact."
+      }
     ]
   },
   "why": {
     "eyebrow": "Waarom SD",
     "title": "Eén persoon. Van A tot Z.",
     "items": [
-      { "title": "Eén aanspreekpunt", "desc": "Van eerste offerte tot afbouw praat je met dezelfde persoon." },
-      { "title": "Volledig geregeld", "desc": "Opstellen, aansturen, afbouwen — jij hoeft nergens aan te denken." },
-      { "title": "Zelf aanwezig", "desc": "Wij staan er zelf bij, zodat licht en geluid heel de avond kloppen." },
-      { "title": "Profmateriaal", "desc": "Betrouwbare, goed onderhouden apparatuur van topmerken." }
+      {
+        "title": "Eén aanspreekpunt",
+        "desc": "Van eerste offerte tot afbouw praat je met dezelfde persoon."
+      },
+      {
+        "title": "Volledig geregeld",
+        "desc": "Opstellen, aansturen, afbouwen — jij hoeft nergens aan te denken."
+      },
+      {
+        "title": "Zelf aanwezig",
+        "desc": "Wij staan er zelf bij, zodat licht en geluid heel de avond kloppen."
+      },
+      {
+        "title": "Profmateriaal",
+        "desc": "Betrouwbare, goed onderhouden apparatuur van topmerken."
+      }
     ]
   },
   "mat": {
@@ -74,7 +104,9 @@
     "consentPre": "Door te verzenden ga je akkoord met ons",
     "privacy": "privacybeleid",
     "whatsapp": "WhatsApp",
-    "note": "De Pannelaan 73, 8660 De Panne · Werkzaam in heel België en daarbuiten."
+    "note": "De Pannelaan 73, 8660 De Panne · Werkzaam in heel België en daarbuiten.",
+    "errRequired": "Dit veld is verplicht.",
+    "errEmail": "Vul een geldig e-mailadres in."
   },
   "foot": {
     "tag": "Licht · Klank · Beleving",
@@ -90,14 +122,38 @@
       "updated": "Laatst bijgewerkt: 2026",
       "intro": "SD Light and Sound respecteert je privacy en verwerkt persoonsgegevens conform de GDPR. Dit beleid legt uit welke gegevens we verzamelen en waarom.",
       "sections": [
-        { "h": "Verwerkingsverantwoordelijke", "p": "SD Light and Sound (Stephan Dobos), De Pannelaan 73, 8660 De Panne. Contact: info@sdlightandsound.be." },
-        { "h": "Welke gegevens", "p": "Via het offerteformulier: naam, e-mailadres, type event, datum en je bericht. We verzamelen enkel wat je zelf invult." },
-        { "h": "Waarvoor", "p": "Om je aanvraag te beantwoorden, een offerte op te maken en contact met je op te nemen. We gebruiken je gegevens niet voor reclame." },
-        { "h": "Rechtsgrond", "p": "De verwerking gebeurt op basis van je toestemming en om op jouw verzoek precontractuele stappen te nemen." },
-        { "h": "Bewaartermijn", "p": "We bewaren je gegevens niet langer dan nodig voor de opvolging van je aanvraag en de wettelijke verplichtingen." },
-        { "h": "Delen met derden", "p": "We verkopen je gegevens nooit. Voor het versturen van e-mails kan een verwerker (mailprovider) worden ingeschakeld, die enkel in onze opdracht handelt." },
-        { "h": "Cookies", "p": "Deze website gebruikt geen tracking- of advertentiecookies. Enkel technisch noodzakelijke functies worden gebruikt." },
-        { "h": "Je rechten", "p": "Je hebt recht op inzage, correctie, verwijdering en bezwaar. Mail naar info@sdlightandsound.be. Je kan ook klacht indienen bij de Gegevensbeschermingsautoriteit (www.gegevensbeschermingsautoriteit.be)." }
+        {
+          "h": "Verwerkingsverantwoordelijke",
+          "p": "SD Light and Sound (Stephan Dobos), De Pannelaan 73, 8660 De Panne. Contact: info@sdlightandsound.be."
+        },
+        {
+          "h": "Welke gegevens",
+          "p": "Via het offerteformulier: naam, e-mailadres, type event, datum en je bericht. We verzamelen enkel wat je zelf invult."
+        },
+        {
+          "h": "Waarvoor",
+          "p": "Om je aanvraag te beantwoorden, een offerte op te maken en contact met je op te nemen. We gebruiken je gegevens niet voor reclame."
+        },
+        {
+          "h": "Rechtsgrond",
+          "p": "De verwerking gebeurt op basis van je toestemming en om op jouw verzoek precontractuele stappen te nemen."
+        },
+        {
+          "h": "Bewaartermijn",
+          "p": "We bewaren je gegevens niet langer dan nodig voor de opvolging van je aanvraag en de wettelijke verplichtingen."
+        },
+        {
+          "h": "Delen met derden",
+          "p": "We verkopen je gegevens nooit. Voor het versturen van e-mails kan een verwerker (mailprovider) worden ingeschakeld, die enkel in onze opdracht handelt."
+        },
+        {
+          "h": "Cookies",
+          "p": "Deze website gebruikt geen tracking- of advertentiecookies. Enkel technisch noodzakelijke functies worden gebruikt."
+        },
+        {
+          "h": "Je rechten",
+          "p": "Je hebt recht op inzage, correctie, verwijdering en bezwaar. Mail naar info@sdlightandsound.be. Je kan ook klacht indienen bij de Gegevensbeschermingsautoriteit (www.gegevensbeschermingsautoriteit.be)."
+        }
       ]
     },
     "terms": {

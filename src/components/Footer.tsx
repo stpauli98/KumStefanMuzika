@@ -5,47 +5,65 @@ import type { Locale } from "@/i18n/config";
 
 export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale }) {
   return (
-    <footer className="border-t border-line py-12">
+    <footer className="section-line relative py-14">
       <div className="container-site">
-        <div className="flex flex-wrap justify-between gap-6">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr]">
           <div>
-            <Link href={`/${lang}`} className="font-display text-[20px] font-extrabold text-chrome">
+            <Link
+              href={`/${lang}`}
+              className="font-display text-[20px] font-extrabold text-chrome"
+            >
               SD LIGHT AND SOUND
             </Link>
-            <div className="mt-2 text-[13.5px] text-rook">{dict.foot.tag}</div>
+            <p className="mt-3 max-w-[32ch] text-[13.5px] leading-relaxed text-rook">
+              {dict.foot.tag}
+            </p>
           </div>
 
-          <div className="text-[13.5px] leading-[1.8] text-rook">
+          <div className="text-[13.5px] leading-[1.9] text-rook">
             {SITE.address}
             <br />
-            <a href={`mailto:${SITE.email}`} className="text-amber">
+            <a href={`mailto:${SITE.email}`} className="text-amber transition-opacity hover:opacity-80">
               {SITE.email}
             </a>
             <br />
-            {SITE.phoneDisplay}
+            <a href={`tel:${SITE.phoneHref}`} className="link-quiet">
+              {SITE.phoneDisplay}
+            </a>
           </div>
 
-          <div className="text-[13.5px] leading-[1.8] text-rook">
+          <div className="text-[13.5px] leading-[1.9] text-rook">
             {dict.foot.area}
             <br />
             {dict.foot.langs}
             <br />
-            <Link href={`/${lang}/privacy`} className="hover:text-amber">
+            <Link href={`/${lang}/privacy`} className="link-quiet">
               {dict.foot.privacy}
             </Link>
-            {" · "}
-            <Link href={`/${lang}/voorwaarden`} className="hover:text-amber">
+            <span className="px-1.5 text-white/20">·</span>
+            <Link href={`/${lang}/voorwaarden`} className="link-quiet">
               {dict.foot.terms}
             </Link>
           </div>
         </div>
 
-        <div className="powered mt-6">POWERED BY&nbsp; {SITE.poweredBy}</div>
-        <div className="mt-2 text-xs text-[#5b5e66]">
-          {dict.foot.credit}{" "}
-          <a href={SITE.agency.url} className="text-amber">
-            {SITE.agency.name}
-          </a>
+        <div className="truss my-8" />
+
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="powered">
+            POWERED BY&nbsp; <b>{SITE.poweredBy}</b>
+          </div>
+          <div className="text-xs text-[#5b5e66]">
+            {dict.foot.credit}{" "}
+            <a
+              href={SITE.agency.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber transition-opacity hover:opacity-80"
+            >
+              {SITE.agency.name}
+            </a>
+          </div>
         </div>
       </div>
     </footer>
