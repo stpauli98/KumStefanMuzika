@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
 import { SITE } from "@/site";
 import type { Dictionary } from "@/i18n/dictionaries";
+import LightRig from "./LightRig";
 import PoweredBy from "./PoweredBy";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
@@ -28,41 +28,21 @@ export default function Hero({ dict }: { dict: Dictionary }) {
         background: "radial-gradient(120% 70% at 50% -10%, #1c1a16 0%, #08080A 62%)",
       }}
     >
-      {/* Stage rig: a truss overhead, two lamps aimed at the logo. */}
-      <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="truss absolute inset-x-0 top-0" />
-        <div className="beam absolute left-[38%] top-0 h-[92%] w-[52%] animate-beam-sway opacity-60 md:opacity-100" />
-        <div className="beam absolute left-[62%] top-0 h-[88%] w-[44%] animate-beam-sway-alt opacity-50 md:opacity-100" />
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "radial-gradient(90% 60% at 50% 40%, transparent, rgba(8,8,10,0.85))",
-          }}
-        />
-      </div>
+      {/* Vignette so the beams fall off into the dark at the edges. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: "radial-gradient(95% 65% at 50% 35%, transparent, rgba(8,8,10,0.8))",
+        }}
+      />
 
-      <div className="container-site relative z-[2] pb-20 pt-16 md:pb-24 md:pt-20">
-        <motion.div {...rise(0)} className="relative mx-auto w-[78%] max-w-[400px] sm:max-w-[440px]">
-          <div aria-hidden className="absolute -inset-8 rounded-full bg-amber/10 blur-3xl" />
-          <div className="relative overflow-hidden rounded-2xl">
-            <Image
-              src="/logo.jpg"
-              alt="SD Light and Sound"
-              width={460}
-              height={460}
-              priority
-              className="w-full"
-            />
-            {/* The reduced-motion media query stops this sweep in CSS, so it can
-                render unconditionally. */}
-            <span
-              aria-hidden
-              className="absolute inset-y-0 -left-1/3 w-1/3 animate-sheen bg-gradient-to-r from-transparent via-white/35 to-transparent"
-            />
-          </div>
+      <div className="container-site relative z-[2] pb-20 pt-10 md:pb-24 md:pt-12">
+        <motion.div {...rise(0)}>
+          <LightRig />
         </motion.div>
 
-        <h1 className="h1 mx-auto mt-9 max-w-[18ch]">
+        <h1 className="h1 mx-auto mt-4 max-w-[18ch]">
           {words.map((w, i) => (
             <motion.span
               key={`${w}-${i}`}
