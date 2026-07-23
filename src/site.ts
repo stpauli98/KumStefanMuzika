@@ -4,9 +4,9 @@ export const SITE = {
   name: "SD Light and Sound",
   url: "https://www.sdlightandsound.be", // TODO: confirm final domain
   email: "info@sdlightandsound.be", // TODO: confirm
-  phoneDisplay: "+32 ··· ·· ·· ··", // TODO: replace
-  phoneHref: "+32000000000", // TODO: replace (E.164, no spaces)
-  whatsapp: "32000000000", // TODO: replace (country code + number, no +)
+  phoneDisplay: "+32 473 36 83 96",
+  phoneHref: "+32473368396", // E.164, no spaces
+  whatsapp: "32473368396", // country code + number, no +
   address: "De Pannelaan 73, 8660 De Panne",
   poweredBy: "JBL · CROWN · MIDAS · DBX · PIONEER",
   agency: { name: "NextPixel", url: "https://www.nextpixel.dev" },
