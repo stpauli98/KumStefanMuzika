@@ -53,7 +53,7 @@ export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale 
           <div className="powered">
             POWERED BY&nbsp; <b>{SITE.poweredBy}</b>
           </div>
-          <div className="text-xs text-[#5b5e66]">
+          <div className="text-xs text-rook">
             {dict.foot.credit}{" "}
             <a
               href={SITE.agency.url}
