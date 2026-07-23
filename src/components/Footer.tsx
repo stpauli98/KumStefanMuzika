@@ -23,7 +23,7 @@ export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale 
           <div className="text-[13.5px] leading-[1.9] text-rook">
             {SITE.address}
             <br />
-            <a href={`mailto:${SITE.email}`} className="text-amber transition-opacity hover:opacity-80">
+            <a href={`mailto:${SITE.email}`} className="text-amber underline decoration-amber/40 underline-offset-2 transition-opacity hover:opacity-80">
               {SITE.email}
             </a>
             <br />
@@ -59,7 +59,7 @@ export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale 
               href={SITE.agency.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-amber transition-opacity hover:opacity-80"
+              className="text-amber underline decoration-amber/40 underline-offset-2 transition-opacity hover:opacity-80"
             >
               {SITE.agency.name}
             </a>
