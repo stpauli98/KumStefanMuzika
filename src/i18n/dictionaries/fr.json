@@ -119,52 +119,118 @@
   "legal": {
     "privacy": {
       "title": "Politique de confidentialité",
-      "updated": "Dernière mise à jour : 2026",
-      "intro": "SD Light and Sound respecte votre vie privée et traite les données personnelles conformément au RGPD. Cette politique explique quelles données nous collectons et pourquoi.",
+      "updated": "Dernière mise à jour : 27 juillet 2026",
+      "intro": "SD Light and Sound traite les données à caractère personnel conformément au Règlement général sur la protection des données. Vous lisez ci-dessous quelles données nous collectons, pourquoi, avec qui nous les partageons et quels droits vous pouvez exercer.",
       "sections": [
         {
           "h": "Responsable du traitement",
-          "p": "SD Light and Sound (Stephan Dobos), De Pannelaan 73, 8660 De Panne. Contact : Stephan.dobos@icloud.com."
+          "p": "SD Light and Sound, dont le siège est établi De Pannelaan 73, 8660 La Panne (Belgique), détermine pourquoi et comment vos données sont traitées. Vous nous joignez à Stephan.dobos@icloud.com ou au +32 473 36 83 96. Les données légales complètes figurent au bas de cette page."
         },
         {
-          "h": "Quelles données",
-          "p": "Via le formulaire de devis : nom, e-mail, type d'événement, date et votre message. Nous ne collectons que ce que vous saisissez."
+          "h": "Quelles données nous traitons",
+          "p": "Le formulaire de devis nous transmet votre nom, votre adresse e-mail, le type d'événement, la date souhaitée et le contenu de votre message. Par ailleurs, notre serveur enregistre brièvement votre adresse IP au moment où vous envoyez le formulaire, et nous mesurons de façon anonyme le nombre de visiteurs du site. Nous ne collectons rien d'autre et ne demandons jamais plus que ce qu'il faut pour vous répondre."
         },
         {
-          "h": "Pourquoi",
-          "p": "Pour répondre à votre demande, établir un devis et vous contacter. Nous n'utilisons pas vos données à des fins publicitaires."
+          "h": "Finalités et bases légales",
+          "p": "Les données du formulaire servent à répondre à votre demande et à établir un devis. La base légale est l'exécution de mesures précontractuelles prises à votre demande (art. 6.1.b RGPD). Votre adresse IP est traitée uniquement pour empêcher l'usage abusif du formulaire, et les statistiques de fréquentation pour maintenir le site fonctionnel et utilisable ; l'une et l'autre reposent sur notre intérêt légitime (art. 6.1.f RGPD). Vos données ne servent jamais à de la publicité et ne sont vendues à personne."
         },
         {
-          "h": "Base légale",
-          "p": "Le traitement repose sur votre consentement et sur des démarches précontractuelles prises à votre demande."
+          "h": "Avec qui nous partageons vos données",
+          "p": "Pour faire tourner le site et vous transmettre votre demande, nous faisons appel à trois sous-traitants : Vercel Inc. pour l'hébergement et les journaux, Resend pour l'envoi de l'e-mail (Amazon SES en service sous-jacent), et Apple iCloud pour la boîte aux lettres qui reçoit votre demande. Un contrat de sous-traitance est conclu avec chacun d'eux. Nous ne partageons rien d'autre avec des tiers, sauf obligation légale."
+        },
+        {
+          "h": "Transfert hors de l'Espace économique européen",
+          "p": "Le formulaire lui-même est traité sur des serveurs situés à Francfort (Allemagne), donc au sein de l'EEE. Les sous-traitants cités ci-dessus sont des entreprises américaines, de sorte que certaines données — les journaux et l'e-mail envoyé — aboutissent malgré tout hors de l'EEE. Ce transfert s'appuie sur le EU-US Data Privacy Framework et, à défaut, sur les clauses contractuelles types de la Commission européenne."
         },
         {
           "h": "Durée de conservation",
-          "p": "Nous ne conservons vos données que le temps nécessaire au suivi de votre demande et aux obligations légales."
+          "p": "Une demande introduite via le formulaire est conservée jusqu'à un an après notre dernier échange à son sujet, puis supprimée. Si votre demande débouche sur une mission effective, les données correspondantes sont conservées aussi longtemps que la loi l'impose, en particulier le délai comptable de sept ans. Votre adresse IP disparaît automatiquement dans l'heure."
         },
         {
-          "h": "Partage avec des tiers",
-          "p": "Nous ne vendons jamais vos données. Un sous-traitant (fournisseur d'e-mail) peut être utilisé pour l'envoi des messages, agissant uniquement pour notre compte."
-        },
-        {
-          "h": "Statistiques",
-          "p": "Nous utilisons Vercel Web Analytics pour mesurer la fréquentation de façon anonyme. Ce service ne dépose aucun cookie et ne conserve aucune donnée permettant de vous identifier."
+          "h": "Sécurité",
+          "p": "Le site fonctionne intégralement sur une connexion chiffrée et est protégé par des en-têtes de sécurité stricts. Le formulaire est protégé contre l'usage automatisé abusif. L'accès à votre demande reste limité aux personnes qui en ont besoin pour vous répondre."
         },
         {
           "h": "Cookies",
-          "p": "Ce site n'utilise pas de cookies de suivi ou publicitaires. Seules les fonctions techniquement nécessaires sont utilisées."
+          "p": "Ce site ne dépose aucun cookie. Les statistiques de fréquentation fonctionnent sans cookies et sans donnée permettant de vous identifier personnellement. C'est pourquoi nous ne vous demandons aucun consentement en la matière."
         },
         {
           "h": "Vos droits",
-          "p": "Vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition. Écrivez à Stephan.dobos@icloud.com. Vous pouvez aussi introduire une plainte auprès de l'Autorité de protection des données (www.autoriteprotectiondonnees.be)."
+          "p": "Vous disposez d'un droit d'accès à vos données, de rectification, d'effacement, de limitation du traitement et de portabilité. Vous pouvez également vous opposer à un traitement fondé sur notre intérêt légitime. Lorsqu'un traitement repose sur votre consentement, vous le retirez à tout moment, sans que cela remette en cause ce qui a été fait auparavant. Un e-mail à Stephan.dobos@icloud.com suffit ; nous répondons dans le mois."
+        },
+        {
+          "h": "Introduire une réclamation",
+          "p": "Si la manière dont nous traitons vos données ne vous satisfait pas, vous pouvez introduire une réclamation auprès de l'Autorité de protection des données, Rue de la Presse 35, 1000 Bruxelles — contact@apd-gba.be — www.autoriteprotectiondonnees.be."
+        },
+        {
+          "h": "Modifications de cette politique",
+          "p": "Nous adaptons cette politique dès que le traitement évolue. La date en haut de page indique la version que vous lisez."
         }
       ]
     },
     "terms": {
       "title": "Conditions générales",
-      "updated": "",
-      "intro": "Nos conditions générales seront publiées prochainement. Une question sur un devis ou une réservation ? Contactez-nous via Stephan.dobos@icloud.com.",
-      "sections": []
+      "updated": "Dernière mise à jour : 27 juillet 2026",
+      "intro": "Ces conditions s'appliquent à chaque devis, réservation et mission de SD Light and Sound, sauf accord écrit contraire. En acceptant un devis, vous confirmez en avoir pris connaissance.",
+      "sections": [
+        {
+          "h": "Champ d'application",
+          "p": "Ces conditions font partie de chaque contrat entre SD Light and Sound et le client. Toute dérogation n'est valable que si nous la confirmons par écrit. Les conditions propres au client ne s'appliquent pas."
+        },
+        {
+          "h": "Devis",
+          "p": "Chaque devis est sans engagement et valable trente jours, sauf mention contraire. Les prix sont exprimés en euros. Le devis précise toujours explicitement s'ils s'entendent TVA comprise ou hors TVA."
+        },
+        {
+          "h": "Réservation",
+          "p": "Une date n'est retenue qu'à partir du moment où vous confirmez le devis par écrit ou par e-mail et, si demandé, payez l'acompte. Jusque-là, la date reste disponible pour d'autres."
+        },
+        {
+          "h": "Paiement",
+          "p": "Le délai de paiement et l'éventuel acompte figurent sur le devis. En cas de retard de paiement, l'intérêt légal est dû de plein droit. Si vous êtes consommateur, nous suivons le Livre XIX du Code de droit économique : vous recevez d'abord un rappel gratuit assorti d'un délai de quatorze jours avant que des frais ne soient portés en compte."
+        },
+        {
+          "h": "Annulation par le client",
+          "p": "L'annulation se fait par écrit. Si elle intervient plus de trente jours avant la date, vous ne devez rien, hormis les frais que nous avons réellement engagés. Entre trente et quatorze jours avant la date, 30 % du montant convenu est dû ; entre quatorze et sept jours, 50 % ; et dans les sept jours précédant la date, la totalité. Si vous souhaitez reporter à une nouvelle date, nous cherchons dans la mesure du possible une solution sans frais supplémentaires."
+        },
+        {
+          "h": "Droit de rétractation",
+          "p": "Si vous concluez, en tant que consommateur, un contrat à distance ou hors de notre établissement, vous disposez en principe d'un délai de réflexion de quatorze jours. Ce droit s'éteint toutefois pour les services liés aux activités de loisirs fournis à une date déterminée (art. VI.53, 12° du Code de droit économique). Pour un événement à une date convenue, le droit de rétractation ne peut donc pas être invoqué."
+        },
+        {
+          "h": "Ce que nous attendons de vous",
+          "p": "Vous veillez à ce que le lieu soit accessible à temps, à ce qu'une alimentation électrique suffisante et sûre soit disponible, et à ce que le montage et le démontage puissent se dérouler sans entrave. Les autorisations, les normes sonores et les permis restent de votre responsabilité, sauf convention expresse contraire. Si la mission se prolonge pour des raisons qui vous incombent, nous pouvons facturer les heures supplémentaires."
+        },
+        {
+          "h": "Matériel",
+          "p": "Tout le matériel fourni reste la propriété de SD Light and Sound. Vous en prenez soin en bon père de famille et êtes responsable de sa perte, de son vol ou de sa dégradation pendant la période où il se trouve sous votre surveillance, hormis l'usure normale."
+        },
+        {
+          "h": "Responsabilité",
+          "p": "Nous exécutons chaque mission au mieux de nos capacités. Notre responsabilité est limitée au montant de la mission et ne couvre pas les dommages indirects tels qu'un manque à gagner ou des occasions perdues. Rien dans ces conditions ne limite notre responsabilité en cas de dol, de faute grave, ou d'atteinte à la vie et à la santé."
+        },
+        {
+          "h": "Force majeure",
+          "p": "Si des circonstances indépendantes de notre volonté nous empêchent d'exécuter la mission — maladie, accident, panne de matériel, conditions météorologiques extrêmes, mesures des autorités — nous vous en informons immédiatement et cherchons avec vous une solution alternative ou un remplaçant. Ce que vous avez déjà payé pour des prestations non fournies vous est remboursé."
+        },
+        {
+          "h": "Images",
+          "p": "Sauf opposition de votre part exprimée au préalable, nous pouvons utiliser des photos de notre propre installation à titre de référence. Aucune personne reconnaissable n'y figure sans son accord."
+        },
+        {
+          "h": "Réclamations",
+          "p": "Si quelque chose ne va pas, faites-le nous savoir par e-mail dans les sept jours suivant l'événement, en décrivant ce qui a posé problème. Nous pourrons ainsi réagir rapidement."
+        },
+        {
+          "h": "Droit applicable et litiges",
+          "p": "Le droit belge s'applique à chaque contrat. En cas de litige, les tribunaux de l'arrondissement judiciaire de Flandre-Occidentale, division de Furnes, sont compétents. En tant que consommateur, vous pouvez également vous adresser au Service de médiation pour le consommateur (www.mediationconsommateur.be) ou à la plateforme européenne de RLL (ec.europa.eu/odr)."
+        }
+      ]
+    },
+    "identity": {
+      "h": "Informations légales",
+      "enterprise": "Numéro d'entreprise",
+      "vat": "Numéro de TVA"
     }
   },
   "notFound": {

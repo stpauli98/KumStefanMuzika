@@ -28,7 +28,7 @@ export default async function PrivacyPage({ params }: { params: { lang: string }
     <>
       <Nav dict={dict} lang={lang} />
       <main>
-        <LegalArticle block={dict.legal.privacy} />
+        <LegalArticle block={dict.legal.privacy} identity={dict.legal.identity} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

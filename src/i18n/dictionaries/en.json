@@ -119,52 +119,118 @@
   "legal": {
     "privacy": {
       "title": "Privacy policy",
-      "updated": "Last updated: 2026",
-      "intro": "SD Light and Sound respects your privacy and processes personal data in line with the GDPR. This policy explains what we collect and why.",
+      "updated": "Last updated: 27 July 2026",
+      "intro": "SD Light and Sound processes personal data in line with the General Data Protection Regulation. Below you can read which data we collect, why, who we share it with and what rights you have in return.",
       "sections": [
         {
           "h": "Data controller",
-          "p": "SD Light and Sound (Stephan Dobos), De Pannelaan 73, 8660 De Panne. Contact: Stephan.dobos@icloud.com."
+          "p": "SD Light and Sound, registered at De Pannelaan 73, 8660 De Panne (Belgium), decides why and how your personal data is processed. You can reach us at Stephan.dobos@icloud.com or on +32 473 36 83 96. The full legal details are at the bottom of this page."
         },
         {
-          "h": "What data",
-          "p": "Via the quote form: name, e-mail, event type, date and your message. We only collect what you enter yourself."
+          "h": "What data we process",
+          "p": "The quote form sends us your name, your email address, the type of event, the date you have in mind and the content of your message. Our server also briefly records your IP address at the moment you submit the form, and we measure visitor numbers anonymously. We collect nothing else, and never ask for more than we need to answer you."
         },
         {
-          "h": "Purpose",
-          "p": "To answer your request, prepare a quote and contact you. We do not use your data for advertising."
+          "h": "Purposes and legal grounds",
+          "p": "We use the form data to answer your enquiry and draw up a quote. The legal ground is the performance of pre-contractual steps taken at your request (art. 6.1.b GDPR). Your IP address is processed solely to prevent abuse of the form, and visitor numbers to keep the site working and usable; both rest on our legitimate interest (art. 6.1.f GDPR). We never use your data for advertising and we sell it to no one."
         },
         {
-          "h": "Legal basis",
-          "p": "Processing is based on your consent and on pre-contractual steps taken at your request."
+          "h": "Who we share data with",
+          "p": "To run the site and deliver your enquiry we rely on three processors: Vercel Inc. for hosting and logs, Resend for sending the email (with Amazon SES underneath), and Apple iCloud for the mailbox that receives your enquiry. A data processing agreement is in place with each of them. We share nothing else with third parties unless the law obliges us to."
         },
         {
-          "h": "Retention",
-          "p": "We keep your data no longer than needed to handle your request and to meet legal obligations."
+          "h": "Transfers outside the European Economic Area",
+          "p": "The form itself is processed on servers in Frankfurt, Germany, so within the EEA. The processors named above are US companies, which means certain data — logs and the email that gets sent — does end up outside the EEA. That transfer relies on the EU-US Data Privacy Framework and, where it does not apply, on the European Commission's standard contractual clauses."
         },
         {
-          "h": "Sharing with third parties",
-          "p": "We never sell your data. A processor (e-mail provider) may be used to send messages, acting only on our behalf."
+          "h": "How long we keep your data",
+          "p": "An enquiry submitted through the form is kept until one year after our last contact about it, then deleted. If your enquiry turns into an actual booking, the related data is kept for as long as the law requires, in particular the seven-year accounting retention period. Your IP address disappears automatically within the hour."
         },
         {
-          "h": "Analytics",
-          "p": "We use Vercel Web Analytics to measure visitor numbers anonymously. The service sets no cookies and stores no personally identifiable data."
+          "h": "Security",
+          "p": "The site runs entirely over an encrypted connection and is protected by strict security headers. The form is protected against automated abuse. Access to your enquiry stays limited to whoever needs it to answer you."
         },
         {
           "h": "Cookies",
-          "p": "This website uses no tracking or advertising cookies. Only technically necessary functions are used."
+          "p": "This website sets no cookies at all. Visitor statistics work without cookies and without any data that identifies you personally. That is also why we do not ask you for cookie consent."
         },
         {
           "h": "Your rights",
-          "p": "You have the right to access, correct, delete and object. E-mail Stephan.dobos@icloud.com. You may also lodge a complaint with the Belgian Data Protection Authority (www.dataprotectionauthority.be)."
+          "p": "You have the right to access your data, to have it corrected or erased, to restrict processing and to data portability. You can also object to processing based on our legitimate interest. Where processing rests on your consent, you can withdraw it at any time without affecting what happened before. An email to Stephan.dobos@icloud.com is enough; we reply within a month."
+        },
+        {
+          "h": "Lodging a complaint",
+          "p": "If you are unhappy with how we handle your data, you can lodge a complaint with the Belgian Data Protection Authority, Drukpersstraat 35, 1000 Brussels — contact@apd-gba.be — www.dataprotectionauthority.be."
+        },
+        {
+          "h": "Changes to this policy",
+          "p": "We update this policy whenever the processing changes. The date at the top tells you which version you are reading."
         }
       ]
     },
     "terms": {
-      "title": "Terms & conditions",
-      "updated": "",
-      "intro": "Our terms and conditions will be published soon. Questions about a quote or booking? Contact us at Stephan.dobos@icloud.com.",
-      "sections": []
+      "title": "Terms and conditions",
+      "updated": "Last updated: 27 July 2026",
+      "intro": "These terms apply to every quote, booking and job carried out by SD Light and Sound, unless we agree otherwise in writing. By accepting a quote you confirm that you have read them.",
+      "sections": [
+        {
+          "h": "Scope",
+          "p": "These terms form part of every agreement between SD Light and Sound and the client. Departures from them are valid only where we confirm them in writing. Any terms of the client's own do not apply."
+        },
+        {
+          "h": "Quotes",
+          "p": "Every quote is without obligation and valid for thirty days, unless stated otherwise on it. Prices are in euros. The quote always states explicitly whether they include or exclude VAT."
+        },
+        {
+          "h": "Booking",
+          "p": "A date is only held once you confirm the quote in writing or by email and, if asked, pay the deposit. Until then the date stays available to others."
+        },
+        {
+          "h": "Payment",
+          "p": "The payment term and any deposit are stated on the quote. Late payment incurs statutory interest by operation of law. If you are a consumer, we follow Book XIX of the Belgian Code of Economic Law: you first receive a free reminder with a fourteen-day term before any costs are charged."
+        },
+        {
+          "h": "Cancellation by the client",
+          "p": "Cancellations must be made in writing. If you cancel more than thirty days before the date, you owe nothing beyond costs we have actually incurred. Between thirty and fourteen days before the date, 30% of the agreed amount is due; between fourteen and seven days, 50%; and within seven days of the date, the full amount. If you would rather move to a new date, we look for a solution without extra cost wherever we can."
+        },
+        {
+          "h": "Right of withdrawal",
+          "p": "If you enter into a contract as a consumer at a distance or away from our premises, you generally have a fourteen-day cooling-off period. That right lapses, however, for leisure services supplied on a specific date (art. VI.53, 12° of the Belgian Code of Economic Law). For an event on an agreed date the right of withdrawal therefore cannot be invoked."
+        },
+        {
+          "h": "What we expect from you",
+          "p": "You make sure the venue is accessible on time, that a sufficient and safe power supply is available, and that setting up and taking down can happen unhindered. Permits, noise limits and authorisations remain your responsibility unless we expressly agree otherwise. If the job runs over because of circumstances on your side, we may charge for the extra hours."
+        },
+        {
+          "h": "Equipment",
+          "p": "All equipment supplied remains the property of SD Light and Sound. You look after it with due care and are liable for loss, theft or damage during the period it is under your supervision, ordinary wear and tear excepted."
+        },
+        {
+          "h": "Liability",
+          "p": "We carry out every job to the best of our ability. Our liability is limited to the value of the job and does not cover indirect loss such as lost profit or missed opportunities. Nothing in these terms limits our liability for intent, gross negligence, or harm to life and health."
+        },
+        {
+          "h": "Force majeure",
+          "p": "If circumstances beyond our control stop us carrying out the job — illness, accident, equipment failure, extreme weather, government measures — we tell you straight away and look with you for an alternative or a replacement. Anything you have already paid for work that did not go ahead is refunded."
+        },
+        {
+          "h": "Photographs",
+          "p": "Unless you object beforehand, we may use photographs of our own setup as a reference. Recognisable people are not shown without their consent."
+        },
+        {
+          "h": "Complaints",
+          "p": "If something goes wrong, let us know by email within seven days of the event, describing what the problem was. That way we can put it right quickly."
+        },
+        {
+          "h": "Governing law and disputes",
+          "p": "Belgian law applies to every agreement. In the event of a dispute, the courts of the West Flanders judicial district, Veurne division, have jurisdiction. As a consumer you can also turn to the Consumer Mediation Service (www.consumerombudsman.be) or to the European ODR platform (ec.europa.eu/odr)."
+        }
+      ]
+    },
+    "identity": {
+      "h": "Legal information",
+      "enterprise": "Enterprise number",
+      "vat": "VAT number"
     }
   },
   "notFound": {
