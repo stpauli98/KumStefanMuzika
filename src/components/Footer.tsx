@@ -23,6 +23,14 @@ export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale 
           <div className="text-[13.5px] leading-[1.9] text-rook">
             {SITE.address}
             <br />
+            {/* Belgian law wants the enterprise number permanently accessible;
+                the line disappears until the number is filled in. */}
+            {SITE.enterpriseNumber ? (
+              <>
+                {dict.legal.identity.enterprise} {SITE.enterpriseNumber}
+                <br />
+              </>
+            ) : null}
             <a href={`mailto:${SITE.email}`} className="text-amber underline decoration-amber/40 underline-offset-2 transition-opacity hover:opacity-80">
               {SITE.email}
             </a>

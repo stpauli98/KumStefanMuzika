@@ -28,7 +28,7 @@ export default async function VoorwaardenPage({ params }: { params: { lang: stri
     <>
       <Nav dict={dict} lang={lang} />
       <main>
-        <LegalArticle block={dict.legal.terms} />
+        <LegalArticle block={dict.legal.terms} identity={dict.legal.identity} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

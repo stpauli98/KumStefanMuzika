@@ -1,6 +1,12 @@
 import { NextResponse } from "next/server";
 import { SITE } from "@/site";
 
+// This is the only route that touches personal data. Pin it to Frankfurt so
+// names, e-mail addresses and messages are processed inside the EU rather than
+// in Vercel's default US region.
+export const preferredRegion = ["fra1"];
+export const runtime = "nodejs";
+
 // Longest value we will accept per field. Anything over is a bot or a paste
 // accident; either way it has no business ending up in an e-mail.
 const LIMITS = { naam: 120, email: 200, type: 120, datum: 40, bericht: 4000 } as const;
@@ -79,7 +85,9 @@ export async function POST(req: Request) {
 
   // No key yet (e.g. local dev before config): accept so the UI works.
   if (!apiKey) {
-    console.warn("[offerte] RESEND_API_KEY missing — not delivered:", { naam, email });
+    // Deliberately no name or e-mail here: logs are retained by the platform
+    // and there is no purpose that justifies personal data ending up in them.
+    console.warn("[offerte] RESEND_API_KEY missing — submission not delivered");
     return NextResponse.json({ ok: true, delivered: false });
   }
 
@@ -100,8 +108,15 @@ export async function POST(req: Request) {
   });
 
   if (!res.ok) {
-    const detail = await res.text();
-    console.error("[offerte] send failed:", detail);
+    // Resend echoes addresses back in some errors, so only the status and the
+    // error name are logged — enough to debug, nothing personal retained.
+    let name = "unknown";
+    try {
+      name = ((await res.json()) as { name?: string }).name ?? "unknown";
+    } catch {
+      /* non-JSON error body */
+    }
+    console.error(`[offerte] send failed: ${res.status} ${name}`);
     return NextResponse.json({ ok: false, error: "send_failed" }, { status: 502 });
   }
 
