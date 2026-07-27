@@ -42,8 +42,14 @@ export default async function Home({ params }: { params: { lang: string } }) {
     ],
     knowsLanguage: ["nl-BE", "fr-BE", "en"],
     founder: { "@type": "Person", name: "Stephan Dobos" },
-    // `vatID` still to add — the enterprise number is being wired up separately
-    // (SITE.enterpriseNumber); once that lands, add `vatID: "BE " + number` here.
+    // Same conditional as the footer and the legal pages: an empty enterprise
+    // number is omitted rather than published as "BE ".
+    ...(SITE.enterpriseNumber
+      ? {
+          vatID: `BE ${SITE.enterpriseNumber}`,
+          taxID: SITE.enterpriseNumber,
+        }
+      : {}),
   };
 
   return (
