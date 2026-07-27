@@ -150,8 +150,22 @@ dezelfde componenten en dictionary-structuur").
 /[lang]/realisaties            portfolio (nu leeg — zie §5)
 ```
 
-Slugs blijven Nederlands in alle talen (zoals `/voorwaarden` nu al doet). Dat is
-consistent met de bestaande routing en scheelt drie sets slugs onderhouden.
+De slugs hierboven zijn de **interne sleutels**, niet de URL's. Sinds
+`src/i18n/routes.ts` krijgt elke pagina onder de homepage een slug per taal —
+`/fr/conditions-generales` in plaats van `/fr/voorwaarden`. Dat is vanuit SEO de juiste
+keuze: de slug is een van de weinige plekken waar een zoekterm nog letterlijk zichtbaar
+staat, en een Franstalige bezoeker die `voorwaarden` in zijn URL ziet, klikt weg.
+
+Nieuwe dienstpagina's volgen dus hetzelfde patroon — één regel per pagina in `routes`:
+
+```ts
+sound:   { nl: "geluid",        fr: "sonorisation",     en: "sound" },
+wedding: { nl: "trouwfeest",    fr: "mariage",          en: "wedding" },
+pricing: { nl: "prijzen",       fr: "tarifs",           en: "pricing" },
+```
+
+Let op de waarschuwing die al in `routes.ts` staat: een waarde daar wijzigen wijzigt een
+live URL, en vraagt tegelijk een `redirects()`-regel in `next.config.mjs`.
 
 **Volgorde van bouwen:** `/trouwfeest` en `/geluid` eerst. Trouwfeesten hebben de hoogste
 marge en de duidelijkste intentie; geluid is de breedste ingang.
@@ -273,12 +287,11 @@ favicons, manifest, privacy + voorwaarden, security headers, NL/FR/EN met
 locale-redirect.
 
 **Ook al in orde — en beter dan verwacht:** `src/i18n/metadata.ts` levert per route een
-correcte `canonical` én volledige `hreflang`-alternates inclusief `x-default`, en
-`/privacy` en `/voorwaarden` geven allebei hun eigen `path` mee aan
-`localizedMetadata()`. Dit is dus al af; niets aan doen. Het enige aandachtspunt is dat
-elke nieuwe route dat patroon moet volgen — een dienstpagina die `localizedMetadata(lang)`
-aanroept zonder `path` krijgt stilzwijgend de canonical van de homepage en concurreert
-dan met zichzelf.
+correcte `canonical` én volledige `hreflang`-alternates inclusief `x-default`. Sinds de
+gelokaliseerde slugs neemt het een `RouteKey` in plaats van een pad, en wijst elke
+hreflang naar de slug van díe taal. Dit is af; niets aan doen. Het aandachtspunt bij
+nieuwe pagina's: geef altijd de `key` mee. `localizedMetadata(lang)` zonder key levert de
+canonical van de homepage op, waarmee de nieuwe pagina zichzelf uit de index schrijft.
 
 Nog te doen:
 
@@ -307,9 +320,9 @@ Nog te doen:
 | # | Actie | Effort | Impact |
 |---|---|---|---|
 | 1 | Google Business Profile + eerste 5 reviews | laag | **hoog** |
-| 2 | Home-title/description herschrijven naar Tier 1 | laag | **hoog** |
+| 2 | ~~Home-title/description herschrijven naar Tier 1~~ ✅ | laag | **hoog** |
 | 3 | Foto's verzamelen bij Stephan, Realisaties vullen | extern | **hoog** |
-| 4 | Ondernemingsnummer + JSON-LD uitbreiden | laag | midden |
+| 4 | ~~JSON-LD uitbreiden + `vatID`-bedrading~~ ✅ — wacht nog op het nummer zelf | laag | midden |
 | 5 | `/trouwfeest` en `/geluid` bouwen | midden | **hoog** |
 | 6 | `/prijzen` — mits Stephan richtprijzen vrijgeeft | midden | **hoog** |
 | 7 | Socials aanmaken/koppelen + `sameAs` | laag | midden |
