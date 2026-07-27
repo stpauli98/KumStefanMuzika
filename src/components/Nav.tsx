@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, useReducedMotion } from "motion/react";
+import * as m from "motion/react-m";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/config";
 import LangSwitcher from "./LangSwitcher";
@@ -137,7 +138,7 @@ export default function Nav({ dict, lang }: { dict: Dictionary; lang: Locale }) 
 
       <AnimatePresence>
         {open && (
-          <motion.div
+          <m.div
             id="mobile-menu"
             role="dialog"
             aria-modal="true"
@@ -166,7 +167,7 @@ export default function Nav({ dict, lang }: { dict: Dictionary; lang: Locale }) 
                 {dict.nav.cta}
               </a>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </nav>

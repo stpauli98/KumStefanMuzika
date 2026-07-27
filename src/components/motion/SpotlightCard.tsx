@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useMotionTemplate, useMotionValue, useReducedMotion } from "motion/react";
+import { useMotionTemplate, useMotionValue, useReducedMotion } from "motion/react";
+import * as m from "motion/react-m";
 import type { MouseEvent, ReactNode } from "react";
 
 /**
@@ -33,7 +34,7 @@ export default function SpotlightCard({
     >
       {/* Rendered unconditionally so server and client markup match; with the
           pointer untracked it simply sits off-canvas. */}
-      <motion.span
+      <m.span
         aria-hidden
         style={{ background: glow }}
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
