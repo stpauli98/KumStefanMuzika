@@ -147,6 +147,10 @@
           "p": "Nous ne vendons jamais vos données. Un sous-traitant (fournisseur d'e-mail) peut être utilisé pour l'envoi des messages, agissant uniquement pour notre compte."
         },
         {
+          "h": "Statistiques",
+          "p": "Nous utilisons Vercel Web Analytics pour mesurer la fréquentation de façon anonyme. Ce service ne dépose aucun cookie et ne conserve aucune donnée permettant de vous identifier."
+        },
+        {
           "h": "Cookies",
           "p": "Ce site n'utilise pas de cookies de suivi ou publicitaires. Seules les fonctions techniquement nécessaires sont utilisées."
         },
@@ -162,5 +166,10 @@
       "intro": "Nos conditions générales seront publiées prochainement. Une question sur un devis ou une réservation ? Contactez-nous via Stephan.dobos@icloud.com.",
       "sections": []
     }
+  },
+  "notFound": {
+    "title": "Cette page n'existe pas",
+    "body": "Le lien n'est plus valide ou comporte une faute de frappe. Revenez à l'accueil ou contactez-nous.",
+    "cta": "Retour à l'accueil"
   }
 }

@@ -147,6 +147,10 @@
           "p": "We verkopen je gegevens nooit. Voor het versturen van e-mails kan een verwerker (mailprovider) worden ingeschakeld, die enkel in onze opdracht handelt."
         },
         {
+          "h": "Statistieken",
+          "p": "We gebruiken Vercel Web Analytics om anoniem bezoekersaantallen te meten. Die dienst plaatst geen cookies en bewaart geen gegevens waarmee je persoonlijk identificeerbaar bent."
+        },
+        {
           "h": "Cookies",
           "p": "Deze website gebruikt geen tracking- of advertentiecookies. Enkel technisch noodzakelijke functies worden gebruikt."
         },
@@ -162,5 +166,10 @@
       "intro": "Onze algemene voorwaarden worden binnenkort gepubliceerd. Vragen over een offerte of reservatie? Contacteer ons gerust via Stephan.dobos@icloud.com.",
       "sections": []
     }
+  },
+  "notFound": {
+    "title": "Deze pagina bestaat niet",
+    "body": "De link klopt niet meer of is verkeerd getypt. Ga terug naar de startpagina of neem gerust contact op.",
+    "cta": "Naar de startpagina"
   }
 }

@@ -17,16 +17,13 @@ function detectLocale(req: NextRequest): Locale {
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
-  const pathLocale = locales.find(
+  const hasLocale = locales.some(
     (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`),
   );
 
-  if (pathLocale) {
-    // Pass the active locale to the root layout via a request header.
-    const headers = new Headers(req.headers);
-    headers.set("x-lang", pathLocale);
-    return NextResponse.next({ request: { headers } });
-  }
+  // The locale lives in the route params, so localised paths pass straight
+  // through and stay statically rendered.
+  if (hasLocale) return NextResponse.next();
 
   // No locale in the path → redirect to the detected/default one.
   const locale = detectLocale(req);

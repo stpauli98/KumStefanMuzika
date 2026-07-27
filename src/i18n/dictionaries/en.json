@@ -147,6 +147,10 @@
           "p": "We never sell your data. A processor (e-mail provider) may be used to send messages, acting only on our behalf."
         },
         {
+          "h": "Analytics",
+          "p": "We use Vercel Web Analytics to measure visitor numbers anonymously. The service sets no cookies and stores no personally identifiable data."
+        },
+        {
           "h": "Cookies",
           "p": "This website uses no tracking or advertising cookies. Only technically necessary functions are used."
         },
@@ -162,5 +166,10 @@
       "intro": "Our terms and conditions will be published soon. Questions about a quote or booking? Contact us at Stephan.dobos@icloud.com.",
       "sections": []
     }
+  },
+  "notFound": {
+    "title": "This page doesn't exist",
+    "body": "The link is out of date or was mistyped. Head back to the homepage, or get in touch.",
+    "cta": "Back to the homepage"
   }
 }
