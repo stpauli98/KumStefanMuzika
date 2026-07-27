@@ -31,9 +31,19 @@ export default async function Home({ params }: { params: { lang: string } }) {
       streetAddress: "De Pannelaan 73",
       postalCode: "8660",
       addressLocality: "De Panne",
+      addressRegion: "West-Vlaanderen",
       addressCountry: "BE",
     },
-    areaServed: { "@type": "Country", name: "Belgium" },
+    // Named municipalities rather than "Belgium": a new domain has to win the
+    // Westkust before it can credibly claim the country.
+    areaServed: [
+      ...SITE.areaServed.map((name) => ({ "@type": "City", name })),
+      { "@type": "AdministrativeArea", name: "West-Vlaanderen" },
+    ],
+    knowsLanguage: ["nl-BE", "fr-BE", "en"],
+    founder: { "@type": "Person", name: "Stephan Dobos" },
+    // `vatID` still to add — the enterprise number is being wired up separately
+    // (SITE.enterpriseNumber); once that lands, add `vatID: "BE " + number` here.
   };
 
   return (
