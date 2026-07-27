@@ -119,52 +119,118 @@
   "legal": {
     "privacy": {
       "title": "Privacybeleid",
-      "updated": "Laatst bijgewerkt: 2026",
-      "intro": "SD Light and Sound respecteert je privacy en verwerkt persoonsgegevens conform de GDPR. Dit beleid legt uit welke gegevens we verzamelen en waarom.",
+      "updated": "Laatst bijgewerkt: 27 juli 2026",
+      "intro": "SD Light and Sound verwerkt persoonsgegevens volgens de Algemene Verordening Gegevensbescherming. Hieronder lees je welke gegevens we verzamelen, waarom, met wie we ze delen en welke rechten je daartegenover hebt.",
       "sections": [
         {
           "h": "Verwerkingsverantwoordelijke",
-          "p": "SD Light and Sound (Stephan Dobos), De Pannelaan 73, 8660 De Panne. Contact: Stephan.dobos@icloud.com."
+          "p": "SD Light and Sound, met zetel te De Pannelaan 73, 8660 De Panne (België), bepaalt waarom en hoe je persoonsgegevens worden verwerkt. Je bereikt ons op Stephan.dobos@icloud.com of op +32 473 36 83 96. De volledige wettelijke gegevens staan onderaan deze pagina."
         },
         {
-          "h": "Welke gegevens",
-          "p": "Via het offerteformulier: naam, e-mailadres, type event, datum en je bericht. We verzamelen enkel wat je zelf invult."
+          "h": "Welke gegevens we verwerken",
+          "p": "Via het offerteformulier ontvangen we je naam, je e-mailadres, het type event, de gewenste datum en de inhoud van je bericht. Daarnaast registreert onze server kortstondig je IP-adres op het ogenblik dat je het formulier verstuurt, en meten we anoniem hoeveel mensen de site bezoeken. Meer verzamelen we niet, en we vragen nooit meer dan we nodig hebben om je te antwoorden."
         },
         {
-          "h": "Waarvoor",
-          "p": "Om je aanvraag te beantwoorden, een offerte op te maken en contact met je op te nemen. We gebruiken je gegevens niet voor reclame."
+          "h": "Waarvoor en op welke rechtsgrond",
+          "p": "De gegevens uit het formulier gebruiken we om je aanvraag te beantwoorden en een offerte op te maken. De rechtsgrond daarvoor is de uitvoering van maatregelen die op jouw verzoek aan een overeenkomst voorafgaan (art. 6.1.b AVG). Je IP-adres verwerken we uitsluitend om misbruik van het formulier tegen te gaan, en de bezoekerscijfers om de site werkend en bruikbaar te houden; beide steunen op ons gerechtvaardigd belang (art. 6.1.f AVG). We gebruiken je gegevens nooit voor reclame en we verkopen ze aan niemand."
         },
         {
-          "h": "Rechtsgrond",
-          "p": "De verwerking gebeurt op basis van je toestemming en om op jouw verzoek precontractuele stappen te nemen."
+          "h": "Met wie we gegevens delen",
+          "p": "Om de site te laten draaien en je aanvraag te bezorgen doen we een beroep op drie verwerkers: Vercel Inc. voor de hosting en de logbestanden, Resend voor de verzending van de e-mail (met Amazon SES als onderliggende dienst), en Apple iCloud voor de mailbox waarin je aanvraag toekomt. Met elk van hen is een verwerkersovereenkomst gesloten. Verder delen we niets met derden, tenzij een wettelijke verplichting ons daartoe dwingt."
         },
         {
-          "h": "Bewaartermijn",
-          "p": "We bewaren je gegevens niet langer dan nodig voor de opvolging van je aanvraag en de wettelijke verplichtingen."
+          "h": "Doorgifte buiten de Europese Economische Ruimte",
+          "p": "Het formulier zelf wordt verwerkt op servers in Frankfurt (Duitsland), dus binnen de EER. De verwerkers hierboven zijn Amerikaanse ondernemingen, waardoor bepaalde gegevens — logbestanden en de verzonden e-mail — toch buiten de EER terechtkomen. Die doorgifte steunt op het EU-US Data Privacy Framework en, waar dat niet van toepassing is, op de modelcontractbepalingen van de Europese Commissie."
         },
         {
-          "h": "Delen met derden",
-          "p": "We verkopen je gegevens nooit. Voor het versturen van e-mails kan een verwerker (mailprovider) worden ingeschakeld, die enkel in onze opdracht handelt."
+          "h": "Hoe lang we je gegevens bewaren",
+          "p": "Een aanvraag via het formulier bewaren we tot één jaar na ons laatste contact daarover, waarna we ze verwijderen. Leidt je aanvraag tot een effectieve opdracht, dan bewaren we de bijhorende gegevens zolang de wet dat vraagt, in het bijzonder de boekhoudkundige bewaartermijn van zeven jaar. Je IP-adres verdwijnt automatisch binnen het uur."
         },
         {
-          "h": "Statistieken",
-          "p": "We gebruiken Vercel Web Analytics om anoniem bezoekersaantallen te meten. Die dienst plaatst geen cookies en bewaart geen gegevens waarmee je persoonlijk identificeerbaar bent."
+          "h": "Beveiliging",
+          "p": "De site draait volledig over een versleutelde verbinding en is afgeschermd met strikte beveiligingsheaders. Het formulier is beveiligd tegen geautomatiseerd misbruik. De toegang tot je aanvraag blijft beperkt tot wie ze nodig heeft om je te antwoorden."
         },
         {
           "h": "Cookies",
-          "p": "Deze website gebruikt geen tracking- of advertentiecookies. Enkel technisch noodzakelijke functies worden gebruikt."
+          "p": "Deze website plaatst geen enkele cookie. De bezoekersstatistieken werken zonder cookies en zonder gegevens waarmee je persoonlijk identificeerbaar bent. Daarom vragen we je ook geen cookietoestemming."
         },
         {
           "h": "Je rechten",
-          "p": "Je hebt recht op inzage, correctie, verwijdering en bezwaar. Mail naar Stephan.dobos@icloud.com. Je kan ook klacht indienen bij de Gegevensbeschermingsautoriteit (www.gegevensbeschermingsautoriteit.be)."
+          "p": "Je hebt recht op inzage in je gegevens, op verbetering, op verwijdering, op beperking van de verwerking en op overdraagbaarheid. Je kan ook bezwaar maken tegen een verwerking die op ons gerechtvaardigd belang steunt. Steunt een verwerking op je toestemming, dan trek je die op elk moment in, zonder dat dit iets afdoet aan wat daarvoor al gebeurde. Een e-mail naar Stephan.dobos@icloud.com volstaat; we antwoorden binnen de maand."
+        },
+        {
+          "h": "Klacht indienen",
+          "p": "Ben je niet tevreden over hoe we met je gegevens omgaan, dan kan je klacht indienen bij de Gegevensbeschermingsautoriteit, Drukpersstraat 35, 1000 Brussel — contact@apd-gba.be — www.gegevensbeschermingsautoriteit.be."
+        },
+        {
+          "h": "Wijzigingen aan dit beleid",
+          "p": "We passen dit beleid aan zodra de verwerking verandert. De datum bovenaan geeft aan welke versie je leest."
         }
       ]
     },
     "terms": {
       "title": "Algemene voorwaarden",
-      "updated": "",
-      "intro": "Onze algemene voorwaarden worden binnenkort gepubliceerd. Vragen over een offerte of reservatie? Contacteer ons gerust via Stephan.dobos@icloud.com.",
-      "sections": []
+      "updated": "Laatst bijgewerkt: 27 juli 2026",
+      "intro": "Deze voorwaarden gelden op elke offerte, reservatie en opdracht van SD Light and Sound, tenzij we schriftelijk iets anders afspreken. Door een offerte te aanvaarden bevestig je dat je ze gelezen hebt.",
+      "sections": [
+        {
+          "h": "Toepassingsgebied",
+          "p": "Deze voorwaarden maken deel uit van elke overeenkomst tussen SD Light and Sound en de klant. Afwijkingen gelden enkel wanneer we ze schriftelijk bevestigen. Eventuele eigen voorwaarden van de klant zijn niet van toepassing."
+        },
+        {
+          "h": "Offertes",
+          "p": "Elke offerte is vrijblijvend en dertig dagen geldig, tenzij er iets anders op vermeld staat. Prijzen zijn uitgedrukt in euro. Of ze inclusief dan wel exclusief btw zijn, staat telkens uitdrukkelijk op de offerte."
+        },
+        {
+          "h": "Reservatie",
+          "p": "Een datum ligt pas vast wanneer je de offerte schriftelijk of per e-mail bevestigt en, indien gevraagd, het voorschot betaalt. Tot dat ogenblik blijft de datum beschikbaar voor anderen."
+        },
+        {
+          "h": "Betaling",
+          "p": "De betalingstermijn en het eventuele voorschot staan op de offerte. Bij laattijdige betaling is van rechtswege de wettelijke interest verschuldigd. Ben je consument, dan volgen we Boek XIX van het Wetboek van economisch recht: je krijgt eerst een kosteloze herinnering met een termijn van veertien dagen voordat er kosten aangerekend worden."
+        },
+        {
+          "h": "Annulering door de klant",
+          "p": "Annuleren doe je schriftelijk. Gebeurt dat meer dan dertig dagen voor de datum, dan ben je niets verschuldigd behalve de kosten die we al effectief maakten. Tussen dertig en veertien dagen voor de datum is 30% van het overeengekomen bedrag verschuldigd, tussen veertien en zeven dagen 50%, en binnen de zeven dagen voor de datum het volledige bedrag. Wil je verplaatsen naar een nieuwe datum, dan zoeken we in de mate van het mogelijke een oplossing zonder extra kosten."
+        },
+        {
+          "h": "Herroepingsrecht",
+          "p": "Sluit je als consument een overeenkomst op afstand of buiten onze onderneming, dan geldt in principe een bedenktijd van veertien dagen. Dat recht vervalt echter voor diensten in verband met vrijetijdsbesteding die op een welbepaalde datum worden verricht (art. VI.53, 12° van het Wetboek van economisch recht). Voor een event op een afgesproken datum kan je het herroepingsrecht dus niet inroepen."
+        },
+        {
+          "h": "Wat we van jou verwachten",
+          "p": "Je zorgt ervoor dat de locatie tijdig toegankelijk is, dat er voldoende en veilige stroomvoorziening aanwezig is, en dat op- en afbouw ongehinderd kunnen doorgaan. Vergunningen, geluidsnormen en toelatingen blijven jouw verantwoordelijkheid, tenzij we uitdrukkelijk iets anders afspreken. Loopt de opdracht uit door omstandigheden aan jouw kant, dan mogen we de extra uren aanrekenen."
+        },
+        {
+          "h": "Materiaal",
+          "p": "Al het geleverde materiaal blijft eigendom van SD Light and Sound. Je behandelt het als een goede huisvader en bent aansprakelijk voor verlies, diefstal of beschadiging tijdens de periode waarin het onder jouw toezicht staat, behalve bij normale slijtage."
+        },
+        {
+          "h": "Aansprakelijkheid",
+          "p": "We voeren elke opdracht uit naar best vermogen. Onze aansprakelijkheid is beperkt tot het bedrag van de opdracht en dekt geen indirecte schade zoals winstderving of gemiste opportuniteiten. Niets in deze voorwaarden beperkt onze aansprakelijkheid voor opzet, zware fout, of schade aan leven en gezondheid."
+        },
+        {
+          "h": "Overmacht",
+          "p": "Kunnen we de opdracht niet uitvoeren door omstandigheden buiten onze wil — ziekte, ongeval, defect materiaal, extreme weersomstandigheden, overheidsmaatregelen — dan brengen we je onmiddellijk op de hoogte en zoeken we samen naar een alternatief of naar een vervanger. Wat je al betaalde voor prestaties die niet doorgingen, krijg je terug."
+        },
+        {
+          "h": "Beeldmateriaal",
+          "p": "Tenzij je daar vooraf bezwaar tegen maakt, mogen we foto's van onze eigen opstelling als referentie gebruiken. Herkenbare personen brengen we daarbij niet in beeld zonder hun toestemming."
+        },
+        {
+          "h": "Klachten",
+          "p": "Loopt er iets mis, laat het ons dan binnen zeven dagen na het event per e-mail weten, met een omschrijving van wat er scheelde. Zo kunnen we snel bijsturen."
+        },
+        {
+          "h": "Toepasselijk recht en geschillen",
+          "p": "Op elke overeenkomst is het Belgisch recht van toepassing. Bij een geschil zijn de rechtbanken van het gerechtelijk arrondissement West-Vlaanderen, afdeling Veurne, bevoegd. Als consument kan je je ook wenden tot de Consumentenombudsdienst (www.consumentenombudsdienst.be) of tot het Europese ODR-platform (ec.europa.eu/odr)."
+        }
+      ]
+    },
+    "identity": {
+      "h": "Wettelijke informatie",
+      "enterprise": "Ondernemingsnummer",
+      "vat": "Btw-nummer"
     }
   },
   "notFound": {

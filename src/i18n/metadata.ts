@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "@/site";
-import { locales, type Locale } from "./config";
+import { locales, defaultLocale, type Locale } from "./config";
+import { pathFor, type RouteKey } from "./routes";
 
 const ogLocales: Record<Locale, string> = {
   nl: "nl_BE",
@@ -8,22 +9,23 @@ const ogLocales: Record<Locale, string> = {
   en: "en_US",
 };
 
-// Canonical + hreflang + OpenGraph basis for a route. `path` is the
-// locale-less pathname ("" for the homepage, "/privacy", ...).
-export function localizedMetadata(lang: Locale, path = ""): Metadata {
-  const languages = Object.fromEntries(
-    locales.map((l) => [l, `/${l}${path}`]),
-  );
+// Canonical + hreflang + OpenGraph basis for a route. `key` names the page;
+// omit it for the homepage. Each hreflang has to point at that language's own
+// slug — /fr/conditions-generales, not /fr/voorwaarden — or the alternates
+// resolve to URLs that do not exist.
+export function localizedMetadata(lang: Locale, key?: RouteKey): Metadata {
+  const pathOf = (l: Locale) => (key ? pathFor(key, l) : `/${l}`);
+  const languages = Object.fromEntries(locales.map((l) => [l, pathOf(l)]));
   return {
     metadataBase: new URL(SITE.url),
     alternates: {
-      canonical: `/${lang}${path}`,
-      languages: { ...languages, "x-default": `/nl${path}` },
+      canonical: pathOf(lang),
+      languages: { ...languages, "x-default": pathOf(defaultLocale) },
     },
     openGraph: {
       type: "website",
       siteName: SITE.name,
-      url: `/${lang}${path}`,
+      url: pathOf(lang),
       locale: ogLocales[lang],
       alternateLocale: locales
         .filter((l) => l !== lang)

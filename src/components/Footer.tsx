@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SITE } from "@/site";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/config";
+import { pathFor } from "@/i18n/routes";
 
 export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale }) {
   return (
@@ -23,6 +24,14 @@ export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale 
           <div className="text-[13.5px] leading-[1.9] text-rook">
             {SITE.address}
             <br />
+            {/* Belgian law wants the enterprise number permanently accessible;
+                the line disappears until the number is filled in. */}
+            {SITE.enterpriseNumber ? (
+              <>
+                {dict.legal.identity.enterprise} {SITE.enterpriseNumber}
+                <br />
+              </>
+            ) : null}
             <a href={`mailto:${SITE.email}`} className="text-amber underline decoration-amber/40 underline-offset-2 transition-opacity hover:opacity-80">
               {SITE.email}
             </a>
@@ -37,11 +46,11 @@ export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale 
             <br />
             {dict.foot.langs}
             <br />
-            <Link href={`/${lang}/privacy`} className="link-quiet">
+            <Link href={pathFor("privacy", lang)} className="link-quiet">
               {dict.foot.privacy}
             </Link>
             <span className="px-1.5 text-white/20">·</span>
-            <Link href={`/${lang}/voorwaarden`} className="link-quiet">
+            <Link href={pathFor("terms", lang)} className="link-quiet">
               {dict.foot.terms}
             </Link>
           </div>

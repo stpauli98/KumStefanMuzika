@@ -22,4 +22,12 @@ export const SITE = {
   ],
   poweredBy: "JBL · CROWN · MIDAS · DBX · PIONEER",
   agency: { name: "NextPixel", url: "https://www.nextpixel.dev" },
+
+  // Belgian law (art. III.74 and XII.6 WER) requires a commercial website to
+  // show the operator's enterprise number. In Belgium the VAT number is the
+  // same digits prefixed with BE, so one value covers both. Fill it in and it
+  // appears in the footer and on both legal pages automatically; leave it
+  // empty and those lines are simply omitted.
+  // TODO: klant — ondernemingsnummer opvragen, formaat "0123.456.789".
+  enterpriseNumber: "",
 } as const;

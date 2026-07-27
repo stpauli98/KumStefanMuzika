@@ -6,6 +6,7 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { SITE } from "@/site";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/config";
+import { pathFor } from "@/i18n/routes";
 
 type Fields = { naam: string; email: string; type: string; datum: string; bericht: string };
 type FieldKey = keyof Fields;
@@ -213,7 +214,7 @@ export default function QuoteForm({ dict, lang }: { dict: Dictionary; lang: Loca
 
             <p className="mt-4 text-[12.5px] text-rook">
               {dict.off.consentPre}{" "}
-              <Link href={`/${lang}/privacy`} className="text-amber underline">
+              <Link href={pathFor("privacy", lang)} className="text-amber underline">
                 {dict.off.privacy}
               </Link>
               .

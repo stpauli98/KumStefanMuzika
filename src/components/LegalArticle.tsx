@@ -1,3 +1,5 @@
+import { SITE } from "@/site";
+
 type LegalBlock = {
   title: string;
   updated: string;
@@ -5,7 +7,15 @@ type LegalBlock = {
   sections: { h: string; p: string }[];
 };
 
-export default function LegalArticle({ block }: { block: LegalBlock }) {
+type Identity = { h: string; enterprise: string; vat: string };
+
+export default function LegalArticle({
+  block,
+  identity,
+}: {
+  block: LegalBlock;
+  identity: Identity;
+}) {
   return (
     <section className="border-t border-line py-[72px]">
       <article className="container-site max-w-[760px]">
@@ -21,6 +31,33 @@ export default function LegalArticle({ block }: { block: LegalBlock }) {
             <p className="mt-2 text-[15px] text-[#C7C2B7]">{s.p}</p>
           </div>
         ))}
+
+        {/* Operator identification, kept on both legal pages so it stays
+            permanently accessible as Belgian law requires. */}
+        <div className="mt-12 border-t border-line pt-6">
+          <h2 className="font-display text-lg font-bold text-white">{identity.h}</h2>
+          <div className="mt-2 text-[15px] leading-[1.9] text-[#C7C2B7]">
+            {SITE.name}
+            <br />
+            {SITE.address}, België
+            {SITE.enterpriseNumber ? (
+              <>
+                <br />
+                {identity.enterprise}: {SITE.enterpriseNumber}
+                <br />
+                {identity.vat}: BE {SITE.enterpriseNumber}
+              </>
+            ) : null}
+            <br />
+            <a href={`mailto:${SITE.email}`} className="link-quiet">
+              {SITE.email}
+            </a>
+            <br />
+            <a href={`tel:${SITE.phoneHref}`} className="link-quiet">
+              {SITE.phoneDisplay}
+            </a>
+          </div>
+        </div>
       </article>
     </section>
   );
