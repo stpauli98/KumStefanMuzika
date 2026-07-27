@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SITE } from "@/site";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/config";
+import { pathFor } from "@/i18n/routes";
 
 export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale }) {
   return (
@@ -45,11 +46,11 @@ export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale 
             <br />
             {dict.foot.langs}
             <br />
-            <Link href={`/${lang}/privacy`} className="link-quiet">
+            <Link href={pathFor("privacy", lang)} className="link-quiet">
               {dict.foot.privacy}
             </Link>
             <span className="px-1.5 text-white/20">·</span>
-            <Link href={`/${lang}/voorwaarden`} className="link-quiet">
+            <Link href={pathFor("terms", lang)} className="link-quiet">
               {dict.foot.terms}
             </Link>
           </div>
