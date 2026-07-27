@@ -9,10 +9,11 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
-// Next 14 renders a root-level not-found in its own html shell, outside the
-// layout — the stylesheet only arrives after hydration. Inline styles keep the
-// page on-brand from the first paint. Copy falls back to the default locale
-// because not-found.tsx cannot read route params.
+// Sits at the [lang] level so it catches notFound() from both the legal route
+// and the catch-all, and renders inside the layout that owns <html>/<body>.
+// Styles stay inline anyway: Next also reaches for this boundary in cases where
+// it renders its own shell, and then no stylesheet has loaded yet. Copy falls
+// back to the default locale because not-found.tsx cannot read route params.
 const styles = {
   main: {
     minHeight: "100vh",

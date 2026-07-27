@@ -3,6 +3,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import { motion, useReducedMotion } from "motion/react";
 import { locales, type Locale } from "@/i18n/config";
+import { routes, routeKeyFromSlug } from "@/i18n/routes";
 
 export default function LangSwitcher({ lang }: { lang: Locale }) {
   const pathname = usePathname();
@@ -12,6 +13,13 @@ export default function LangSwitcher({ lang }: { lang: Locale }) {
   function switchTo(target: Locale) {
     const segments = (pathname || `/${lang}`).split("/");
     segments[1] = target; // replace the locale segment
+
+    // The slug is localised too, so swapping only the locale would send a
+    // reader of /fr/conditions-generales to /nl/conditions-generales, which
+    // does not exist. Translate the slug along with the language.
+    const key = segments[2] ? routeKeyFromSlug(lang, segments[2]) : null;
+    if (key) segments[2] = routes[key][target];
+
     router.push(segments.join("/") || `/${target}`);
   }
 

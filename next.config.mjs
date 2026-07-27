@@ -25,11 +25,23 @@ const securityHeaders = [
   },
 ];
 
+// The FR and EN legal pages used to be served under the Dutch slug. Those URLs
+// were live and are in the sitemap Google has not crawled yet, so they get a
+// permanent redirect rather than a 404. Keep in sync with src/i18n/routes.ts.
+const legacyLegalRedirects = [
+  { source: "/fr/privacy", destination: "/fr/confidentialite" },
+  { source: "/fr/voorwaarden", destination: "/fr/conditions-generales" },
+  { source: "/en/voorwaarden", destination: "/en/terms" },
+].map((r) => ({ ...r, permanent: true }));
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];
+  },
+  async redirects() {
+    return legacyLegalRedirects;
   },
 };
 export default nextConfig;
