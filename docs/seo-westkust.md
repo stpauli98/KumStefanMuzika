@@ -215,14 +215,25 @@ alle content samen.
 3. **Ondernemingsnummer toevoegen.** Ontbreekt nu in de footer en in de JSON-LD.
    sdlight.be toont het wél (BE1032204219) — dat is een vertrouwenssignaal waar wij
    momenteel achterlopen. Ook wettelijk verplicht voor een Belgische ondernemingssite.
-4. **`LocalBusiness` JSON-LD uitbreiden.** Staat er al in `src/app/[lang]/page.tsx`.
-   Aanvullen met `areaServed` (de gemeentes), `openingHours`, `telephone`,
-   `vatID`/`taxID`, `sameAs` (socials) en `priceRange`.
+4. **`LocalBusiness` JSON-LD uitbreiden.** Staat al in `src/app/[lang]/page.tsx`, met
+   `name`, `description`, `url`, `telephone`, `email`, `image` en een volledig
+   `PostalAddress`. Dat is een degelijke basis.
+   Nog toe te voegen: `openingHours`, `vatID`, `priceRange`, `geo`, en `sameAs`
+   zodra er socials zijn (zie punt 7).
+   **En één correctie:** `areaServed` staat er nu als
+   `{"@type": "Country", name: "Belgium"}`. Dat is te breed en werkt tegen de
+   focusstrategie van dit plan — vervang het door een expliciete lijst van
+   `City`-entiteiten (De Panne, Koksijde, Nieuwpoort, Veurne, Diksmuide,
+   Oostende) plus `AdministrativeArea` West-Vlaanderen.
 5. **Reviews.** Vijf Google-reviews van eerdere klanten wegen zwaarder dan tien
    blogartikels. Vraag Stephan om na elk event een reviewlink te sturen.
 6. **Vermeldingen** (gratis, doe er 5–10): trouwportalen (Weddingfair,
    Trouwen.be, Bruidsdagen), lokale ondernemersgidsen, gemeentelijke handelsgids
    De Panne/Koksijde, Facebook-bedrijfspagina, Instagram met adres in bio.
+7. **Socials ontbreken volledig.** Er staat nergens in `src/` een link naar Instagram
+   of Facebook. sdlight.be heeft beide (`@sdlightsound` + een Facebook-pagina) en linkt
+   ze in de footer. Zonder socials is er geen `sameAs`, en dus één vertrouwenssignaal
+   minder richting Google. Uitzoeken bij Stephan of die accounts bestaan.
 
 ---
 
@@ -241,7 +252,9 @@ zo pakken ze meteen Tier 3.
 
 1. *Wat kost licht en geluid huren voor een feest?* → Tier 2, hele prijscluster.
 2. *Geluidsinstallatie kiezen voor 50, 150 of 500 gasten* → matcht
-   `geluidsinstallatie huren feestje` en de gastenaantal-slider die al op de site staat.
+   `geluidsinstallatie huren feestje`, en sluit aan op de `Materiaal`-sectie die met
+   geanimeerde tellers al de spanwijdte van 50 tot 2000 gasten claimt. Dat getal wordt
+   nu alleen geanimeerd, nergens onderbouwd — dit artikel maakt het waar.
 3. *Trouwfeest aan de kust: licht en geluid regelen in De Panne, Koksijde en Nieuwpoort* →
    Tier 1 + Tier 3 in één.
 4. *Feest in openlucht: stroom, weer en geluidsnormen aan de kust* → onderscheidend,
@@ -259,11 +272,16 @@ Al in orde: SSG per taal, `robots.ts`, `sitemap.ts`, `LocalBusiness` JSON-LD, OG
 favicons, manifest, privacy + voorwaarden, security headers, NL/FR/EN met
 locale-redirect.
 
+**Ook al in orde — en beter dan verwacht:** `src/i18n/metadata.ts` levert per route een
+correcte `canonical` én volledige `hreflang`-alternates inclusief `x-default`, en
+`/privacy` en `/voorwaarden` geven allebei hun eigen `path` mee aan
+`localizedMetadata()`. Dit is dus al af; niets aan doen. Het enige aandachtspunt is dat
+elke nieuwe route dat patroon moet volgen — een dienstpagina die `localizedMetadata(lang)`
+aanroept zonder `path` krijgt stilzwijgend de canonical van de homepage en concurreert
+dan met zichzelf.
+
 Nog te doen:
 
-- [ ] `hreflang`-alternates per pagina (`alternates.languages` in `generateMetadata`),
-      inclusief `x-default`.
-- [ ] Canonical-URL per pagina.
 - [ ] `SITE.url` bevestigen — staat nu als `// TODO: confirm final domain`. Alles
       hangt hieraan: sitemap, OG, canonicals.
 - [ ] Nieuwe routes toevoegen aan `sitemap.ts` zodra ze bestaan.
@@ -294,7 +312,7 @@ Nog te doen:
 | 4 | Ondernemingsnummer + JSON-LD uitbreiden | laag | midden |
 | 5 | `/trouwfeest` en `/geluid` bouwen | midden | **hoog** |
 | 6 | `/prijzen` — mits Stephan richtprijzen vrijgeeft | midden | **hoog** |
-| 7 | hreflang + canonicals | laag | midden |
+| 7 | Socials aanmaken/koppelen + `sameAs` | laag | midden |
 | 8 | `/licht`, `/podium-truss`, `/led-wand`, `/dj` | midden | midden |
 | 9 | Vier artikels | hoog | midden |
 | 10 | Tier 4 (Oostende, Brugge, Kortrijk) | hoog | later |
