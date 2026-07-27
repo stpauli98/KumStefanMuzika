@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from "motion/react";
+import { useMotionValue, useReducedMotion, useSpring, useTransform } from "motion/react";
+import * as m from "motion/react-m";
 import type { MouseEvent } from "react";
 
 /**
@@ -88,7 +89,7 @@ export default function LightRig() {
         />
       </svg>
 
-      <motion.div
+      <m.div
         aria-hidden
         className="pointer-events-none absolute inset-0 mix-blend-screen"
         style={{ rotate: rigTilt, transformOrigin: "50% 0%" }}
@@ -100,7 +101,7 @@ export default function LightRig() {
             </div>
 
             {/* the beam: pinned to the lens, swinging on its own cycle */}
-            <motion.div
+            <m.div
               className="absolute left-0 top-[26px] origin-top"
               style={{
                 width: "clamp(160px, 26vw, 280px)",
@@ -125,7 +126,7 @@ export default function LightRig() {
             />
           </div>
         ))}
-      </motion.div>
+      </m.div>
 
       {/* pool of light on the floor, under the wordmark */}
       <div

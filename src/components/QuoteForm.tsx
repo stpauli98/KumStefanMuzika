@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, useReducedMotion } from "motion/react";
+import * as m from "motion/react-m";
 import { SITE } from "@/site";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/config";
@@ -37,7 +38,7 @@ function Field({
       {children}
       <AnimatePresence>
         {error && (
-          <motion.p
+          <m.p
             id={`err-${name}`}
             initial={animate ? { opacity: 0, height: 0 } : false}
             animate={{ opacity: 1, height: "auto" }}
@@ -46,7 +47,7 @@ function Field({
             className="overflow-hidden pt-1.5 text-[12.5px] text-[#E4685F]"
           >
             {error}
-          </motion.p>
+          </m.p>
         )}
       </AnimatePresence>
     </div>
@@ -130,7 +131,7 @@ export default function QuoteForm({ dict, lang }: { dict: Dictionary; lang: Loca
         <p className="sec-sub mb-8">{dict.off.sub}</p>
 
         {status === "ok" ? (
-          <motion.div
+          <m.div
             initial={still ? false : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             className="glass flex items-start gap-3 border-amber/40 bg-amber/[0.08] px-5 py-4 text-[15px] text-zand"
@@ -148,7 +149,7 @@ export default function QuoteForm({ dict, lang }: { dict: Dictionary; lang: Loca
               <path d="M20 6L9 17l-5-5" />
             </svg>
             <p>{dict.off.success}</p>
-          </motion.div>
+          </m.div>
         ) : (
           <div className="glass p-5 sm:p-7">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">

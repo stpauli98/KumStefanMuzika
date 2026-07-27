@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo, Archivo_Narrow } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import MotionProvider from "@/components/motion/MotionProvider";
 import { locales, isLocale, defaultLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedMetadata } from "@/i18n/metadata";
@@ -69,7 +70,7 @@ export default function LangLayout({
       className={`${archivo.variable} ${archivoNarrow.variable}`}
     >
       <body>
-        {children}
+        <MotionProvider>{children}</MotionProvider>
         <Analytics />
       </body>
     </html>
