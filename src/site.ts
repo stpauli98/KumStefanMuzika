@@ -4,9 +4,9 @@ export const SITE = {
   name: "SD Light and Sound",
   url: "https://www.sdlightandsound.be", // TODO: confirm final domain
   email: "Stephan.dobos@icloud.com",
-  phoneDisplay: "+32 473 36 83 96",
-  phoneHref: "+32473368396", // E.164, no spaces
-  whatsapp: "32473368396", // country code + number, no +
+  phoneDisplay: "+32 456 90 34 50",
+  phoneHref: "+32456903450", // E.164, no spaces
+  whatsapp: "32456903450", // country code + number, no +
   address: "De Pannelaan 73, 8660 De Panne",
   // Municipalities the JSON-LD claims as service area. Deliberately the Westkust
   // rather than "Belgium": a new domain ranks locally first, and an honest, narrow

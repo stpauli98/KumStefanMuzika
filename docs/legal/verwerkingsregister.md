@@ -22,7 +22,7 @@ komen doorlopend binnen, dus de vrijstelling is hier niet van toepassing.
 | Adres | De Pannelaan 73, 8660 De Panne, België |
 | Ondernemingsnummer | _in te vullen_ |
 | E-mail | Stephan.dobos@icloud.com |
-| Telefoon | +32 473 36 83 96 |
+| Telefoon | +32 456 90 34 50 |
 | Functionaris gegevensbescherming | Niet verplicht (geen grootschalige of gevoelige verwerking) |
 
 ---
